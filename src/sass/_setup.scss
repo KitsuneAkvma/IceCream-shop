@@ -16,5 +16,23 @@
 //czcionki użyte w makiecie.
 //
 //// pozwoliłem sobie je zdeklarować, żeby nie było żadnych problemó z kompatybilnością :)
-$font-main: 'DM Sans', sans-serif;
-$font-header: 'Titan One', cursive;
+
+/* DM Sans weight 400, 500, 700 */
+
+//klasa containerów//
+.container {
+  width: 100%;
+  padding: 0 6.25%;
+  align-items: center;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 4.5%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    padding: 0 6%;
+  }
+}
