@@ -1,20 +1,24 @@
-$decorative-font: "Titan One";
-$main-font: "DM Sans";
+//font families used in figma
+$font-header: 'Titan One';
+$font-main: 'DM Sans';
 
-/* DM Sans weight 400, 500, 700 */
+//font weight used in figma
+$font-regular: 400;
+$font-medium: 500;
+$font-bold: 700;
 
-$light-pink: #FFF5F6;
-$main-pink: #FFB8CA;
-$medium-pink: #FFA5BA;
-$pink-menu: #E17992;
+//colors used in figma
+$primary-pink: #ffb8ca;
+$secondary-pink: #ffa5ba;
 
-$raspberry-accent: #D41443;
+$accent: #d41443;
 
+$background-pink: #e17992;
+$bacground-light-pink: #fff5f6;
+$background-white: #ffffff;
 
-$white: #FFFFFF;
-$gray: #907E82;
-$black: #000000;
+$font: #000000;
 
-$sand: #F0D1A5;
-
-$green: #C2E297;
+$primary-gray: #907e82;
+$primary-sand: #f0d1a5;
+$primary-green: #c2e297;
