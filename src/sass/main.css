@@ -1,5 +1,8 @@
 @charset "UTF-8";
+
+@import './_variables.scss';
+
 /*
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
- *//*# sourceMappingURL=main.css.map */
+ */ /*# sourceMappingURL=main.css.map */
