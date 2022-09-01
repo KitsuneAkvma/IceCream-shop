@@ -1,8 +1,10 @@
 @charset "UTF-8";
-
-@import './_variables.scss';
-
 /*
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
- */ /*# sourceMappingURL=main.css.map */
+ */
+body {
+  color: blue;
+}
+
+/* DM Sans weight 400, 500, 700 *//*# sourceMappingURL=main.css.map */
