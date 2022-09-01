@@ -3,5 +3,16 @@
  * Wszystkie partials podłączamy tutaj.
  */
 
-// Style dla pliku z przykładem HTML fragmentu
-@import './example';
+//importowanie czcionek
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap');
+
+//importowanie partiali
+@import './setup';
+@import './hero';
+@import './products';
+@import './about';
+@import './advantages';
+@import './gallery';
+@import './reviews';
+@import './contacts';
+@import './footer';
