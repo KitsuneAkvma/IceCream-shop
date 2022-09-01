@@ -7,7 +7,20 @@
 //
 // kolory użyte w makiecie
 //
+$light-pink: #fff5f6;
+$main-pink: #ffb8ca;
+$medium-pink: #ffa5ba;
+$pink-menu: #e17992;
 
+$raspberry-accent: #d41443;
+
+$white: #ffffff;
+$gray: #907e82;
+$black: #000000;
+
+$sand: #f0d1a5;
+
+$green: #c2e297;
 //
 //wagi fontu użyte w makiecie. Titan one ma tylko jedną wagę: regular
 //
@@ -18,3 +31,23 @@
 //// pozwoliłem sobie je zdeklarować, żeby nie było żadnych problemó z kompatybilnością :)
 $font-main: 'DM Sans', sans-serif;
 $font-header: 'Titan One', cursive;
+
+/* DM Sans weight 400, 500, 700 */
+
+//klasa containerów//
+.container {
+  width: 100%;
+  padding: 0 6.25%;
+  align-items: center;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 4.5%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    padding: 0 6%;
+  }
+}
