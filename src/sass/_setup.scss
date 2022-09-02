@@ -1,38 +1,22 @@
-////
-///  Osoby, które nie krozystały ze zmiennych scss:
-///  zasada jest identyczna jak w zmiennych css, zmienia się tylko symbol na początku:
-///  "font-family: $font-main"  //// zwraca "font-family: 'DM Sans', sans-serif"
-///
-
 //
 // kolory użyte w makiecie
 //
 
-//
-//wagi fontu użyte w makiecie. Titan one ma tylko jedną wagę: regular
-//
-
-//
-//czcionki użyte w makiecie.
-//
-//// pozwoliłem sobie je zdeklarować, żeby nie było żadnych problemó z kompatybilnością :)
-
-/* DM Sans weight 400, 500, 700 */
-
 //klasa containerów//
 .container {
-  width: 100%;
-  padding: 0 6.25%;
+  min-width: 320px;
+  max-width: 1280px;
+  padding: 0 20px;
   align-items: center;
   margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
   .container {
-    padding: 0 4.5%;
+    padding: 0 34px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .container {
-    padding: 0 6%;
+    padding: 0 114px;
   }
 }
