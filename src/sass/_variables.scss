@@ -1,40 +1,39 @@
 $fonts: (
-    'font-header': 'Titan One',
-    'font-main': 'DM Sans',
+  'font-header': 'Titan One',
+  'font-main': 'DM Sans',
 );
 
 @function getFont($key) {
-    @return map-get($fonts, $key);
+  @return map-get($fonts, $key);
 }
 
-
 $font-weights: (
-    'font-regular': 400,
-    'font-medium': 500,
-    'font-bold': 700,
+  'font-regular': 400,
+  'font-medium': 500,
+  'font-bold': 700,
 );
 
 @function getFontWeight($key) {
-    @return map-get($font-weights, $key);
+  @return map-get($font-weights, $key);
 }
 
 $colors: (
-    'primary-pink': #ffb8ca,
-    'secondary-pink': #ffa5ba,
+  'primary-pink': #ffb8ca,
+  'secondary-pink': #ffa5ba,
 
-    'accent': #d41443,
+  'accent': #d41443,
 
-    'background-menu': #e17992,
-    'background-light-pink': #fff5f6,
-    'background-white': #ffffff,
+  'background-menu': #e17992,
+  'background-light-pink': #fff5f6,
+  'background-white': #ffffff,
 
-    'dark-font': #000000,
+  'dark-font': #000000,
 
-    'primary-gray': #907e82,
-    'primary-sand': #f0d1a5,
-    'primary-green': #c2e297,
+  'primary-gray': #907e82,
+  'primary-sand': #f0d1a5,
+  'primary-green': #c2e297,
 );
 
 @function getColor($key) {
-    @return map-get($colors, $key);
+  @return map-get($colors, $key);
 }
