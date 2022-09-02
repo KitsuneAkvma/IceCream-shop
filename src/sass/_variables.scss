@@ -1,20 +1,40 @@
-$decorative-font: "Titan One";
-$main-font: "DM Sans";
+$fonts: (
+    'font-header': 'Titan One',
+    'font-main': 'DM Sans',
+);
 
-/* DM Sans weight 400, 500, 700 */
-
-$light-pink: #FFF5F6;
-$main-pink: #FFB8CA;
-$medium-pink: #FFA5BA;
-$pink-menu: #E17992;
-
-$raspberry-accent: #D41443;
+@function getFont($key) {
+    @return map-get($fonts, $key);
+}
 
 
-$white: #FFFFFF;
-$gray: #907E82;
-$black: #000000;
+$font-weights: (
+    'font-regular': 400,
+    'font-medium': 500,
+    'font-bold': 700,
+);
 
-$sand: #F0D1A5;
+@function getFontWeight($key) {
+    @return map-get($font-weights, $key);
+}
 
-$green: #C2E297;
+$colors: (
+    'primary-pink': #ffb8ca,
+    'secondary-pink': #ffa5ba,
+
+    'accent': #d41443,
+
+    'background-menu': #e17992,
+    'background-light-pink': #fff5f6,
+    'background-white': #ffffff,
+
+    'dark-font': #000000,
+
+    'primary-gray': #907e82,
+    'primary-sand': #f0d1a5,
+    'primary-green': #c2e297,
+);
+
+@function getColor($key) {
+    @return map-get($colors, $key);
+}
