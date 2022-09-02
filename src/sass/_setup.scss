@@ -36,3 +36,14 @@
     padding: 0 6%;
   }
 }
+
+.button {
+  font-family: getFont('font-main');
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.section--header {
+  background-color: getColor('primary-pink');
+}

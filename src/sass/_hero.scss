@@ -1,3 +1,68 @@
-body {
-  color: blue;
+.hero-header__ellipse {
+  rx: 173;
+  ry: 172;
+  cx: 250;
+  cy: 150;
+  fill: getColor('secondary-pink');
+  stroke: getColor('dark-font');
+  stroke-width: 1;
+}
+
+.hero-header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-header_h1 {
+  font-family: getFont('font-header');
+  font-weight: getFontWeigh('font-regular');
+  font-size: 48px;
+  line-height: 0.97;
+  text-transform: uppercase;
+  color: getColor('accent');
+}
+
+.hero-header_h2 {
+  font-family: getFont('font-header');
+  font-weight: getFontWeigh('font-regular');
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: getColor('background-white');
+}
+
+.hero-header__buttons {
+  display: flex;
+}
+
+.button__header {
+  font-weight: getFontWeight('font-regular');
+  font-size: 8px;
+  line-height: 1.25;
+}
+
+.button__header--accent {
+  background: getColor('accent');
+  border-radius: 20px;
+  color: getColor('background-white');
+  margin-right: 8px;
+}
+
+@media screen and (min-width: 1280px) {
+  .button__header {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  .button__header--accent {
+    margin-right: 15px;
+  }
+}
+
+.button__header--white {
+  background: getColor('background-white');
+  border-radius: 20px;
+  color: getColor('accent');
 }
