@@ -4,6 +4,9 @@
  */
 
 //importowanie partiali
+@import 'variables';
+@import 'common';
+
 @import 'setup';
 @import 'hero';
 @import 'products';
@@ -13,5 +16,3 @@
 @import 'reviews';
 @import 'contacts';
 @import 'footer';
-@import 'variables';
-@import 'normalizer';
