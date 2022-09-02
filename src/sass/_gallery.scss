@@ -1,0 +1,28 @@
+.gallery {
+  height: 122px;
+  width: 100%;
+
+  background-image: linear-gradient(
+    180deg,
+    getColor('background-light-pink') 40%,
+    getColor('background-white') 0%
+  );
+  &__img {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery {
+    height: 264px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery {
+    height: 264px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery {
+    height: 430px;
+  }
+}

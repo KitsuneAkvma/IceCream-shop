@@ -1,1 +1,43 @@
-<section class="gallery">gallery</section>
+<section class="gallery">
+  <img
+    src="images/gallery/gallery-tablet@2.png"
+    alt="gallery"
+    class="gallery__img"
+    srcset="
+      images/gallery/gallery-mobile.png     320w,
+      images/gallery/gallery-tablet.png     768w,
+      images/gallery/gallery-desktop.png   1280w,
+
+      images/gallery/gallery-mobile@2.png   640w,
+      images/gallery/gallery-tablet@2.png  1536w,
+      images/gallery/gallery-desktop@2.png 2560w
+    "
+    sizes="
+    (max-width:   767px) 320px,
+    (min-width: 768px) and (max-width: 1199px) 768px,
+    (min-width: 1200px) 1280px,
+    
+    (max-width:   1534px) 640px,
+    (min-width: 1534px) and (max-width: 2399px) 1536px,
+    (min-width: 2400px) 2560px
+                     "
+  />
+  <!-- <picture>
+    <source
+      srcset="images/gallery/gallery-mobile.png, images/gallery/gallery-mobile@2.png 2x"
+      media="(max-width: 767px)"
+    />
+
+    <source
+      srcset="images/gallery/gallery-tablet.png, images/gallery/gallery-tablet@2.png 2x"
+      media="(min-width: 768px) and (max-width:1200px)"
+    />
+
+    <source
+      srcset="images/gallery/gallery-desktop.png, images/gallery/gallery-desktop@2.png 2x"
+      media="(min-width: 1200px)"
+    />
+
+    <img src="images/gallery/gallery-tablet@2.png" alt="gallery" />
+  </picture>  -->
+</section>
