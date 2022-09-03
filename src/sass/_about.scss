@@ -9,6 +9,7 @@ h2 {
 }
 .about {
   padding: 125px 0 39px 0;
+  background-color: getColor('background-light-pink');
   &__article {
     padding: 46px 30px 17px 30px;
     font-family: getFont('font-main');
@@ -85,9 +86,11 @@ h2 {
   color: getColor('accent');
   &--about {
     background-color: getColor('background-white');
-    border: 1px;
-    padding: 20px 37px;
-    transform: translate(25%);
+    border: none;
+    border-radius: 22px;
+    padding: 15px 37px;
+    margin-left: 30px;
+    /*transform: translate(25%);*/
     &::after {
       content: '>';
       font-size: 14px;
