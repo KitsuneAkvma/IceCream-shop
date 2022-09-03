@@ -364,6 +364,9 @@ h1 {
 
 .reviews {
   width: 100%;
+  padding: 0;
+  margin-inline: 0;
+  margin-block: 4.8rem 10.3rem;
 }
 .reviews__slide {
   display: flex;
@@ -381,8 +384,8 @@ h1 {
   gap: 1.8rem;
 }
 .reviews__slide__item__content {
-  width: 9.8rem;
-  padding: 2rem 6rem 1rem;
+  width: 17rem;
+  padding: 2.6rem 4rem 3.3rem 3.7rem;
   background-color: #fafafa;
 }
 .reviews__slide__item__content__comment {
@@ -397,7 +400,7 @@ h1 {
 .reviews__slide__item__content__comment::before {
   content: "❜❜";
   position: absolute;
-  left: 0;
+  left: -9px;
   top: 0.8rem;
   letter-spacing: -8px;
   -webkit-text-fill-color: rgba(109, 109, 109, 0.1960784314);
@@ -410,6 +413,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1.09rem;
 }
 .reviews__slide__nav__person {
   font-family: "DM Sans";
@@ -419,8 +423,9 @@ h1 {
   text-align: center;
 }
 .reviews__slide__nav__indicator {
+  margin-top: 1rem;
   display: flex;
-  gap: 1rem;
+  gap: 1.2rem;
   padding: 0;
   list-style: none;
 }
@@ -436,8 +441,8 @@ h1 {
   fill: #d41443;
 }
 .icon--elipse {
-  width: 1rem;
-  height: 1rem;
+  width: 0.8rem;
+  height: 0.8rem;
   fill: #d9d9d9;
 }
 

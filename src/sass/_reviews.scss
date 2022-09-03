@@ -7,6 +7,9 @@
 
 .reviews {
   width: 100%;
+  padding: 0;
+  margin-inline: 0;
+  margin-block: 4.8rem 10.3rem;
 
   &__slide {
     @include flex-column;
@@ -18,14 +21,14 @@
     gap: 1.8rem;
 
     &__content {
-      width: 9.8rem;
-      padding: 2rem 6rem 1rem;
+      width: 17rem;
+      padding: 2.6rem 4rem 3.3rem 3.7rem;
 
       background-color: #fafafa;
 
       &__comment {
         position: relative;
-        font-family: 'DM Sans';
+        font-family: getFont(font-main);
         font-weight: getFontWeight(font-medium);
 
         font-size: 12px;
@@ -36,10 +39,10 @@
       &__comment::before {
         content: '❜❜';
         position: absolute;
-        left: 0;
+        left: -9px;
         top: 0.8rem;
-        letter-spacing: -8px;
 
+        letter-spacing: -8px;
         -webkit-text-fill-color: #6d6d6d32;
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: getColor(dark-font);
@@ -50,6 +53,7 @@
 
   &__slide__nav {
     @include flex-column;
+    gap: 1.09rem;
     &__person {
       font-family: getFont(font-main);
       font-weight: getFontWeight(font-medium);
@@ -60,8 +64,9 @@
     }
 
     &__indicator {
+      margin-top: 1rem;
       display: flex;
-      gap: 1rem;
+      gap: 1.2rem;
       padding: 0;
 
       list-style: none;
@@ -81,8 +86,8 @@
   }
 
   &--elipse {
-    width: 1rem;
-    height: 1rem;
+    width: 0.8rem;
+    height: 0.8rem;
     fill: #d9d9d9;
   }
 }
