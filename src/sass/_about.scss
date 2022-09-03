@@ -17,11 +17,8 @@ h2 {
     font-weight: getFontWeight('font-medium');
     line-height: 1.62;
     color: getColor('dark-font');
-    max-width: 87%;
-<<<<<<< HEAD
+    max-width: 220px;
     margin: 0 auto;
-=======
->>>>>>> c6a657ae32af6052af85309e9165947029e1f7ab
   }
   &__cow-image {
     display: block;
@@ -43,28 +40,16 @@ h2 {
   }
 }
 .title__label {
-<<<<<<< HEAD
   display: block;
-=======
->>>>>>> c6a657ae32af6052af85309e9165947029e1f7ab
   font-family: getFont('font-header');
   font-size: 18px;
   color: getColor('secondary-pink');
   text-transform: uppercase;
-<<<<<<< HEAD
   max-width: 200px;
   margin: 0 auto;
 }
 .section__title {
   text-align: center;
-=======
-  align-self: center;
-  padding: 0 31px;
-  margin: 0 auto;
-}
-.section__title {
-  text-align-last: center;
->>>>>>> c6a657ae32af6052af85309e9165947029e1f7ab
   font-family: getFont('font-header');
   font-size: 34px;
   line-height: 1.14;
@@ -72,11 +57,7 @@ h2 {
   margin: 0 auto;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-<<<<<<< HEAD
   max-width: 200px;
-=======
-  max-width: 65%;
->>>>>>> c6a657ae32af6052af85309e9165947029e1f7ab
   padding-top: 15px;
 }
 .cow-image {
@@ -109,12 +90,7 @@ h2 {
     border: none;
     border-radius: 22px;
     padding: 15px 37px;
-<<<<<<< HEAD
     margin-left: 50px;
-=======
-    margin-left: 30px;
->>>>>>> c6a657ae32af6052af85309e9165947029e1f7ab
-    /*transform: translate(25%);*/
     &::after {
       content: '>';
       font-size: 14px;
