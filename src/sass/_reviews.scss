@@ -1,30 +1,32 @@
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .reviews {
   width: 100%;
 
   &__slide {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     flex-wrap: wrap;
     gap: 1.1rem;
-    justify-content: center;
-    align-items: center;
   }
   &__slide__item {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     gap: 1.8rem;
-    justify-content: center;
-    align-items: center;
 
     &__content {
       width: 9.8rem;
       padding: 2rem 6rem 1rem;
+
       background-color: #fafafa;
 
       &__comment {
         position: relative;
         font-family: 'DM Sans';
-        font-weight: $font-medium;
+        font-weight: getFontWeight(font-medium);
 
         font-size: 12px;
         line-height: 255%;
@@ -40,21 +42,17 @@
 
         -webkit-text-fill-color: #6d6d6d32;
         -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: black;
+        -webkit-text-stroke-color: getColor(dark-font);
         font-size: 130px;
       }
     }
   }
 
   &__slide__nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex-column;
     &__person {
-      font-family: 'DM Sans';
-      font-style: normal;
-      font-weight: $font-medium;
+      font-family: getFont(font-main);
+      font-weight: getFontWeight(font-medium);
       font-size: 14px;
       line-height: 186%;
 
@@ -74,12 +72,12 @@
   &--3elipse {
     width: 2rem;
     height: 0.3rem;
-    fill: $accent;
+    fill: getColor(accent);
   }
   &--home {
     width: 1rem;
     height: 1rem;
-    fill: $accent;
+    fill: getColor(accent);
   }
 
   &--elipse {
