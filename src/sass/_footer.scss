@@ -4,8 +4,8 @@
 }
 
 .footer-description {
-  font-weight: getFontWeight(regular);
-  font-family: getFont(header);
+  font-weight: getFontWeight(font-regular);
+  font-family: getFont(font-header);
   text-transform: uppercase;
   color: getColor(primary-pink);
   &__title {
