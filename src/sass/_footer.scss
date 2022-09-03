@@ -1,13 +1,13 @@
 .footer {
-  background-color: $bacground-light-pink;
+  background-color: getColor(background-light-pink);
   position: relative;
 }
 
 .footer-description {
-  font-weight: $font-regular;
-  font-family: $font-header;
+  font-weight: getFontWeight(font-regular);
+  font-family: getFont(font-header);
   text-transform: uppercase;
-  color: $primary-pink;
+  color: getColor(primary-pink);
   &__title {
     margin-right: auto;
     max-width: 232px;
@@ -19,7 +19,7 @@
       max-width: 200px;
       font-size: 34px;
       letter-spacing: 0.04em;
-      color: $accent;
+      color: getColor(accent);
     }
   }
 }
@@ -28,14 +28,14 @@
   display: flex;
   justify-content: flex-end;
   gap: 28px;
-  color: $secondary-pink;
+  color: getColor(secondary-pink);
   &__reference {
     text-decoration: none;
     color: currentColor;
     cursor: pointer;
     &:hover,
     &:focus {
-      color: $accent;
+      color: getColor(accent);
     }
   }
   &__icon {
@@ -51,16 +51,16 @@
     &:nth-child(2) {
       margin-bottom: 65px;
       text-align: right;
-      font-family: $font-main;
+      font-family: getFont(font-main);
       font-size: 13px;
       line-height: 1.86;
-      font-weight: $font-bold;
-      color: $font;
+      font-weight: getFontWeight(font-bold);
+      color: getColor(dark-font);
     }
   }
   &__phone {
     text-decoration: none;
-    color: $accent;
+    color: getColor(accent);
     cursor: pointer;
   }
 }
@@ -68,12 +68,12 @@
 .footer-adress {
   padding-bottom: 31px;
   text-align: center;
-  font-family: $font-main;
+  font-family: getFont(font-main);
   font-size: 14px;
   line-height: 1.52;
   font-style: normal;
 
-  color: $primary-gray;
+  color: getFont(primary-gray);
   &__description {
     margin: 0 auto;
     max-width: 150px;
