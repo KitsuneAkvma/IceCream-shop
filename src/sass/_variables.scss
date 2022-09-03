@@ -1,40 +1,24 @@
-$fonts: (
-    'font-header': 'Titan One',
-    'font-main': 'DM Sans',
-);
+//font families used in figma
+$font-header: 'Titan One';
+$font-main: 'DM Sans';
 
-@function getFont($key) {
-    @return map-get($fonts, $key);
-}
+//font weight used in figma
+$font-regular: 400;
+$font-medium: 500;
+$font-bold: 700;
 
+//colors used in figma
+$primary-pink: #ffb8ca;
+$secondary-pink: #ffa5ba;
 
-$font-weights: (
-    'font-regular': 400,
-    'font-medium': 500,
-    'font-bold': 700,
-);
+$accent: #d41443;
 
-@function getFontWeight($key) {
-    @return map-get($font-weights, $key);
-}
+$background-pink: #e17992;
+$bacground-light-pink: #fff5f6;
+$background-white: #ffffff;
 
-$colors: (
-    'primary-pink': #ffb8ca,
-    'secondary-pink': #ffa5ba,
+$font: #000000;
 
-    'accent': #d41443,
-
-    'background-menu': #e17992,
-    'background-light-pink': #fff5f6,
-    'background-white': #ffffff,
-
-    'dark-font': #000000,
-
-    'primary-gray': #907e82,
-    'primary-sand': #f0d1a5,
-    'primary-green': #c2e297,
-);
-
-@function getColor($key) {
-    @return map-get($colors, $key);
-}
+$primary-gray: #907e82;
+$primary-sand: #f0d1a5;
+$primary-green: #c2e297;
