@@ -1,0 +1,13 @@
+.gallery {
+  height: auto;
+  width: 100%;
+  background-image: linear-gradient(
+    180deg,
+    getColor('background-light-pink') 40%,
+    getColor('background-white') 0%
+  );
+  &__img {
+    margin: 0 auto;
+  }
+}
+
