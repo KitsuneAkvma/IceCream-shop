@@ -1,24 +1,26 @@
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .reviews {
   width: 100%;
 
   &__slide {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     flex-wrap: wrap;
     gap: 1.1rem;
-    justify-content: center;
-    align-items: center;
   }
   &__slide__item {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     gap: 1.8rem;
-    justify-content: center;
-    align-items: center;
 
     &__content {
       width: 9.8rem;
       padding: 2rem 6rem 1rem;
+
       background-color: #fafafa;
 
       &__comment {
@@ -47,10 +49,7 @@
   }
 
   &__slide__nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex-column;
     &__person {
       font-family: getFont(font-main);
       font-weight: getFontWeight(font-medium);
