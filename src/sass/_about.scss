@@ -52,6 +52,7 @@ h2 {
   text-align: center;
   font-family: getFont('font-header');
   font-size: 34px;
+  font-weight: getFontWeight('font-regular');
   line-height: 1.14;
   color: getColor('accent');
   margin: 0 auto;
@@ -85,18 +86,75 @@ h2 {
   font-size: 14px;
   font-weight: getFontWeight('font-bold');
   color: getColor('accent');
+  &__icon {
+    fill: getColor('accent');
+    padding-left: 14px;
+    stroke: getColor('accent');
+    stroke-width: 2px;
+  }
   &--about {
     background-color: getColor('background-white');
     border: none;
     border-radius: 22px;
-    padding: 15px 37px;
+    padding: 10px 37px;
     margin-left: 35px;
-    &::after {
-      content: url('data:image/svg+xml; utf8, <svg ... code here</svg>');
+  }
+}
+@media screen and (min-width: 768px) {
+  .about {
+    padding: 130px 0px 66px 0px;
+    &__article {
       font-size: 14px;
-      font-weight: getFontWeight('font-bold');
-      color: currentColor;
-      padding-left: 14px;
+      line-height: 1.76;
+      color: getColor('dark-font');
+      max-width: 340px;
+      margin-bottom: 62px;
+    }
+    &__cow-image {
+      max-width: 340px;
+    }
+    &__milk-image {
+      background-image: none;
+    }
+  }
+  .content-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+  }
+  .title__label {
+    font-size: 26px;
+    color: getColor('secondary-pink');
+    max-width: 290px;
+  }
+  .section__title {
+    font-size: 48px;
+    color: getColor('accent');
+    max-width: 435px;
+    padding-top: 16px;
+  }
+  .cow-image {
+    margin: 0;
+  }
+  .article {
+    &__intro {
+      padding-bottom: 49px;
+    }
+    &__main {
+      letter-spacing: 0.04em;
+      &--last {
+        padding-top: 10px;
+      }
+    }
+  }
+  .button {
+    font-size: 16px;
+    &__icon {
+      stroke-width: 2px;
+    }
+    &--about {
+      margin-left: 447px;
     }
   }
 }
