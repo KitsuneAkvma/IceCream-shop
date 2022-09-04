@@ -10,6 +10,10 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 38px;
+    overflow: hidden;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
   }
   &__item1::before {
     content: url(../images/advantages/icon1.png);
@@ -39,6 +43,18 @@
     max-width: 230px;
   }
 }
+.box {
+  transform: translateX(250%);
+  transition: transform 0.8s  cubic-bezier(0.4, 0, 0.2, 1);
+}
+.box:nth-child(2) {
+  transform: translateX(-250%);
+}
+
+.box.show {
+  transform: translateX(0);
+}
+
 @media screen and (min-width: 768px) {
   .advantages {
     padding-top: 66px;
