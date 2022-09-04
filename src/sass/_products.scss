@@ -1,6 +1,5 @@
 .products__label{
     font-family: getFont('font-header');
-    font-style: normal;
     font-weight: getFont('font-regular');
     font-size: 18px;
     line-height: 21px;
@@ -28,21 +27,18 @@
     flex-wrap: wrap;
 }
 .products__item{
-    
+    position: relative;
     width: 280px;
     border-radius: 24px;
     margin-bottom: 130px;
 }
-.products__item--icecream{
-    position: relative;
+.products__item--icecream{    
     background-color:getColor('primary-pink'); 
 }
 .products__item--icecoffee{
-    position: relative;
     background-color:getColor('primary-sand');
 }
 .products__item--milkshakes{
-    position: relative;
     background-color:getColor('primary-green');
 }
 .products__name{
@@ -50,7 +46,7 @@
     font-style: normal;
     font-weight: getFont('font-regular');
     font-size: 20px;
-    line-height: 23px;
+    line-height: 1.15;
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
@@ -60,11 +56,11 @@
 }
 .products__description{
     font-family: getFont('font-main');
-    width: 200px;
+    min-width: 200px;
     font-style: normal;
     font-weight:  getFont('font-bold');
     font-size: 14px;
-    line-height: 152%;
+    line-height: 1.52;
     text-align: center;
     letter-spacing: 0.04em;
     color: getColor('background-white');
