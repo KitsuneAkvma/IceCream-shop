@@ -28,9 +28,10 @@
 
       &__comment {
         position: relative;
+        z-index: 1;
+
         font-family: getFont(font-main);
         font-weight: getFontWeight(font-medium);
-
         font-size: 12px;
         line-height: 255%;
         text-align: center;
@@ -39,13 +40,12 @@
       &__comment::before {
         content: '❜❜';
         position: absolute;
-        left: -9px;
+        left: -7px;
         top: 0.8rem;
+        z-index: -1;
 
+        color: #e1e1e1;
         letter-spacing: -8px;
-        -webkit-text-fill-color: #6d6d6d32;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: getColor(dark-font);
         font-size: 130px;
       }
     }
