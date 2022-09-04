@@ -1239,6 +1239,14 @@ h2 {
   padding: 0;
   list-style: none;
   transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.reviews__slide__nav__indicator__item {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+.reviews__slide__nav__indicator__item:hover {
+  transform: scale(1.2);
 }
 .reviews__slide__nav__indicator__item {
   cursor: pointer;
