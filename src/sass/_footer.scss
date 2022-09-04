@@ -30,7 +30,9 @@
   color: getColor(secondary-pink);
   &__item {
     &:first-child {
-      margin-bottom: 46px;
+
+      margin-bottom: 50px;
+
       display: flex;
       justify-content: flex-end;
       gap: 28px;
@@ -46,6 +48,9 @@
     }
   }
   &__reference {
+
+    display: block;
+
     text-decoration: none;
     color: currentColor;
     cursor: pointer;
@@ -53,15 +58,24 @@
     &:hover,
     &:focus {
       color: getColor(accent);
+
+      transform: scale(1.1);
+
     }
   }
   &__icon {
     fill: currentColor;
   }
   &__phone {
+    display: inline-block;
     text-decoration: none;
     color: getColor(accent);
     cursor: pointer;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      transform: scale(1.02);
+    }
   }
 }
 
@@ -89,7 +103,9 @@
   }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1279px) {
+
+@media screen and (min-width: 767px) {
+
   .footer-grid {
     margin-bottom: 120px;
     display: flex;
@@ -114,6 +130,9 @@
     margin: 0;
     &__item {
       &:last-child {
+
+        gap: 30px;
+
         font-size: 16px;
         line-height: 186%;
         letter-spacing: 0.02em;
@@ -128,3 +147,36 @@
     }
   }
 }
+
+@media screen and (min-width: 1280px) {
+  .footer-grid {
+    margin-bottom: 106 px;
+    &__title {
+      margin-bottom: 15px;
+      font-size: 30px;
+      line-height: 1.13;
+      max-width: 100%;
+      letter-spacing: 0.04em;
+
+      &--main {
+        font-size: 58px;
+        line-height: 1.2;
+        letter-spacing: 0.06em;
+      }
+    }
+    &__item {
+      &:last-child {
+        flex-grow: 1;
+      }
+    }
+  }
+
+  .footer-link {
+    &item {
+      &:first-child {
+        gap: 24px;
+      }
+    }
+  }
+}
+
