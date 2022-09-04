@@ -8,7 +8,6 @@
 .reviews {
   width: 100%;
   padding: 0;
-  margin-inline: 0;
   margin-block: 4.8rem 10.3rem;
 
   &__slide {
@@ -19,12 +18,23 @@
   &__slide__item {
     @include flex-column;
     gap: 1.8rem;
-
+    width: 17rem;
+    transition: all 1s ease-out;
+    &__image {
+      width: 85px;
+      height: 85px;
+      transition: transform 0.5s ease-out;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
     &__content {
-      width: 17rem;
+      @include flex-column;
       padding: 2.6rem 4rem 3.3rem 3.7rem;
 
       background-color: #fafafa;
+      user-select: none;
+      transition: all 1s ease-out;
 
       &__comment {
         position: relative;
@@ -35,7 +45,9 @@
         font-size: 12px;
         line-height: 255%;
         text-align: center;
+
         background: repeating-linear-gradient(#fafafa, #fafafa 29px, #e1e1e1 29px, #e1e1e1 30px);
+        transition: all 1s ease-out;
       }
       &__comment::before {
         content: '❜❜';
@@ -47,6 +59,8 @@
         color: #e1e1e1;
         letter-spacing: -8px;
         font-size: 130px;
+
+        transition: 0.5s ease-in-out;
       }
     }
   }
@@ -54,6 +68,8 @@
   &__slide__nav {
     @include flex-column;
     gap: 1.09rem;
+    transition: all 0.5s ease-out;
+
     &__person {
       font-family: getFont(font-main);
       font-weight: getFontWeight(font-medium);
@@ -70,6 +86,15 @@
       padding: 0;
 
       list-style: none;
+      transition: all 0.5s ease-out;
+
+      &__item{
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
     }
   }
 }
@@ -78,6 +103,7 @@
     width: 2rem;
     height: 0.3rem;
     fill: getColor(accent);
+    transition: 0.5s ease-in-out;
   }
   &--home {
     width: 1rem;
@@ -89,5 +115,62 @@
     width: 0.8rem;
     height: 0.8rem;
     fill: #d9d9d9;
+  }
+}
+@media screen and (min-width: 767px) {
+  .reviews {
+    &__slide__item {
+      width: 38.576rem;
+
+      &__content {
+        padding: 1.8rem 3.2rem 1.7rem 2.4rem;
+        height: 9.9rem;
+      }
+
+      &__content__comment {
+        width: 27.879rem;
+        height: 6.4rem;
+        font-size: 14px;
+        line-height: 216%;
+        letter-spacing: 0.04em;
+      }
+
+      &__content__comment::before {
+        left: -38px;
+      }
+    }
+    &__slide__nav {
+      gap: 0.848rem;
+
+      &__indicator {
+        margin-top: 0.667rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .reviews {
+    &__slide__item {
+      width: 100%;
+
+      &__content {
+        width: 58.121rem;
+        padding: 1.8rem 3.2rem 1.7rem 2.4rem;
+        height: 9.9rem;
+      }
+
+      &__content__comment {
+        width: 49.818rem;
+        height: 4.485rem;
+
+        font-size: 16px;
+        line-height: 186%;
+      }
+
+      &__content__comment::before {
+        left: -38px;
+      }
+    }
   }
 }
