@@ -11,7 +11,7 @@ h2 {
   padding: 125px 0 39px 0;
   background-color: getColor('background-light-pink');
   &__article {
-    padding: 46px 30px 17px 30px;
+    padding: 46px 0px 17px 0px;
     font-family: getFont('font-main');
     font-size: 12px;
     font-weight: getFontWeight('font-medium');
@@ -90,9 +90,9 @@ h2 {
     border: none;
     border-radius: 22px;
     padding: 15px 37px;
-    margin-left: 50px;
+    margin-left: 35px;
     &::after {
-      content: '>';
+      content: url('data:image/svg+xml; utf8, <svg ... code here</svg>');
       font-size: 14px;
       font-weight: getFontWeight('font-bold');
       color: currentColor;
