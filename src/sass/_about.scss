@@ -85,18 +85,17 @@ h2 {
   font-size: 14px;
   font-weight: getFontWeight('font-bold');
   color: getColor('accent');
+  &__icon {
+    fill: getColor('accent');
+    padding-left: 14px;
+    stroke: getColor('accent');
+    stroke-width: 2px;
+  }
   &--about {
     background-color: getColor('background-white');
     border: none;
     border-radius: 22px;
-    padding: 15px 37px;
+    padding: 10px 37px;
     margin-left: 35px;
-    &::after {
-      content: url('data:image/svg+xml; utf8, <svg ... code here</svg>');
-      font-size: 14px;
-      font-weight: getFontWeight('font-bold');
-      color: currentColor;
-      padding-left: 14px;
-    }
   }
 }
