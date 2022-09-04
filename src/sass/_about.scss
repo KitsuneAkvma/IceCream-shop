@@ -1,0 +1,102 @@
+@import 'setup';
+@import 'variables';
+@import 'common';
+
+h2 {
+  margin: 0;
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+.about {
+  padding: 125px 0px 39px 0px;
+  background-color: getColor('background-light-pink');
+  &__article {
+    padding: 46px 0px 17px 0px;
+    font-family: getFont('font-main');
+    font-size: 12px;
+    font-weight: getFontWeight('font-medium');
+    line-height: 1.62;
+    color: getColor('dark-font');
+    max-width: 220px;
+    margin: 0 auto;
+  }
+  &__cow-image {
+    display: block;
+    margin: 0 auto;
+  }
+  &__milk-image {
+    background-image: url('../images/about/milk-bg-mobile.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    &__milk-image {
+      background-image: url('../images/about/milk-bg-mobile@2x.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: bottom;
+    }
+  }
+}
+.title__label {
+  display: block;
+  font-family: getFont('font-header');
+  font-size: 18px;
+  color: getColor('secondary-pink');
+  text-transform: uppercase;
+  max-width: 200px;
+  margin: 0 auto;
+}
+.section__title {
+  text-align: center;
+  font-family: getFont('font-header');
+  font-size: 34px;
+  line-height: 1.14;
+  color: getColor('accent');
+  margin: 0 auto;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  max-width: 200px;
+  padding-top: 15px;
+}
+.cow-image {
+  margin: 0 auto;
+}
+.article {
+  &__intro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: getColor('dark-font');
+    padding-bottom: 47px;
+  }
+  &__main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: getColor('primary-gray');
+    &--last {
+      padding-top: 10px;
+    }
+  }
+}
+.button {
+  font-size: 14px;
+  font-weight: getFontWeight('font-bold');
+  color: getColor('accent');
+  &--about {
+    background-color: getColor('background-white');
+    border: none;
+    border-radius: 22px;
+    padding: 15px 37px;
+    margin-left: 35px;
+    &::after {
+      content: url('data:image/svg+xml; utf8, <svg ... code here</svg>');
+      font-size: 14px;
+      font-weight: getFontWeight('font-bold');
+      color: currentColor;
+      padding-left: 14px;
+    }
+  }
+}
