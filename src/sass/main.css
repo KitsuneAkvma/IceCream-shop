@@ -96,10 +96,15 @@ h1 {
 .hero-header {
   padding-top: 6px;
   position: relative;
+  height: 550px;
 }
 
-.hero-header__link {
+.hero-header__link--burger {
   color: #d41443;
+}
+.hero-header__link--arrow {
+  color: #d41443;
+  background-color: #ffffff;
 }
 
 .hero-header__svg {
@@ -122,7 +127,6 @@ h1 {
   bottom: 71px;
   right: -94px;
   border-radius: 50%;
-  border: 1px solid #000000;
   background: #ffa5ba;
   z-index: -1;
 }
@@ -142,6 +146,7 @@ h1 {
 .hero-header__bottom {
   position: absolute;
   z-index: 2;
+  bottom: 160px;
 }
 
 .hero-header__title-div {
@@ -195,20 +200,12 @@ h1 {
 }
 
 .numbers__item {
+  position: relative;
   display: flex;
   flex-direction: column;
   text-align: right;
   padding-top: 2px;
-}
-.numbers__item::after {
-  content: "";
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  bottom: 83px;
-  left: 34px;
-  border-radius: 50%;
-  background: #ffffff;
+  z-index: 2;
 }
 
 .numbers__number {
@@ -220,6 +217,17 @@ h1 {
   text-transform: uppercase;
   color: #d41443;
 }
+.numbers__number::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  bottom: 29px;
+  left: 34px;
+  border-radius: 50%;
+  background: #ffffff;
+  z-index: -1;
+}
 
 .numbers__text {
   font-family: "DM Sans";
@@ -229,18 +237,10 @@ h1 {
   color: #ffffff;
 }
 
-.hero-header__text {
+.hero-header__text-div {
   display: none;
 }
 
-@media screen and (max-width: 767px) {
-  .hero-header {
-    height: 100vh;
-  }
-  .hero-header__bottom {
-    bottom: 160px;
-  }
-}
 @media screen and (min-width: 768px) {
   .hero-header {
     height: 399px;
@@ -254,7 +254,6 @@ h1 {
     height: 322px;
     bottom: 46px;
     right: -110px;
-    border: none;
   }
   .hero-header__img--milk {
     display: block;
@@ -291,18 +290,24 @@ h1 {
     justify-content: space-between;
     gap: 14px;
   }
-  .hero-header__text {
-    display: block;
-    margin-top: 205px;
-    margin-bottom: 59px;
+  .hero-header__text-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 7px;
+    margin-bottom: 34px;
     margin-left: 120px;
+    margin-top: 205px;
+    position: relative;
+    z-index: 2;
+  }
+  .hero-header__text {
     width: 114px;
     font-family: "DM Sans";
     font-weight: 400;
     font-size: 8px;
     line-height: 1.5;
     color: #ffffff;
-    z-index: 2;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -457,6 +462,8 @@ h1 {
     justify-content: space-between;
     gap: 30px;
     align-items: center;
+    position: relative;
+    z-index: 2;
   }
   .button__text--menu {
     width: 80.72px;
