@@ -11,7 +11,7 @@
     grid-template-columns: 1fr;
     gap: 38px;
     overflow: hidden;
-    max-width: 320px;
+    max-width: 200px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -40,7 +40,7 @@
     font-weight: getFontWeight('font-bold');
     line-height: 1.7;
     margin-top: 16px;
-    max-width: 230px;
+    
   }
 }
 .box {
