@@ -1,6 +1,6 @@
 .products__label{
     font-family: getFont('font-header');
-    font-weight: getFont('font-regular');
+    font-weight: getFontWeight('font-regular');
     font-size: 18px;
     line-height: 21px;
     text-align: center;
@@ -11,7 +11,7 @@
 .products__title{
     font-family: getFont('font-header');
     font-style: normal;
-    font-weight: getFont('font-regular');
+    font-weight: getFontWeight('font-regular');
     font-size: 34px;
     line-height: 39px;
     text-align: center;
@@ -21,14 +21,20 @@
     margin-top: 15px;
     margin-bottom: 144px;
 }
-.products__list{
+.products__position{
+    align-items: center;
+    flex-direction: column;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    position: relative; 
+}
+.products__list{
+    display: block;
+    align-items: center;
 }
 .products__item{
     position: relative;
     width: 280px;
+    height: 485px;
     border-radius: 24px;
     margin-bottom: 130px;
 }
@@ -44,29 +50,32 @@
 .products__name{
     font-family: getFont('font-header');
     font-style: normal;
-    font-weight: getFont('font-regular');
+    font-weight: getFontWeight('font-regular');
     font-size: 20px;
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: getColor('background-white');
-    position: relative;
-    margin-top: 161px;
+    position: absolute;
+    top: 161px;
+    left: 53px;
+    right: 53px;
 }
 .products__description{
     font-family: getFont('font-main');
-    min-width: 200px;
+    width: 200px;
     font-style: normal;
-    font-weight:  getFont('font-bold');
+    font-weight: getFontWeight('font-bold');
     font-size: 14px;
     line-height: 1.52;
     text-align: center;
     letter-spacing: 0.04em;
-    color: getColor('background-white');
-    margin: auto;
-    margin-top: 66px;
-    position: relative;
+    color: getColor('background-white');       
+    position: absolute;
+    top: 250px;
+    left: 39px;
+    right: 41px;
 }
 .products__button{
     background-color: getColor("background-white");
@@ -76,13 +85,18 @@
     border-radius: 50%;
     display:flex;
     justify-content: center;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 41px;
+    cursor: pointer;
+    position: absolute;
+    top: 404px;
+    left: 120px;
+    right: 120px;
 }
 .products__icon{
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
+    fill: getColor("accent");
+    position: absolute;
+    top: 12px;
 }
 .products__item--icecream::before{
     content: url('../images/products/pink/pink-mobile.png');
@@ -90,14 +104,15 @@
     position: absolute;
     top: -112px;
     left: 15px;
+    right: 15px;
 }
-
 .products__item--icecoffee::before{
     content: url('../images/products/sand/sand-mobile.png');
     display: block;
     position: absolute;
     top: -112px;
     left: 15px;
+    right: 15px;
 }
 .products__item--milkshakes::before{
     content: url('../images/products/green/green-mobile.png');
@@ -105,25 +120,86 @@
     position: absolute;
     top: -112px;
     left: 15px;
+    right: 15px;
 }
 .products__name::after{
-  /*  content: url("../images/svg/icons.svg#icon-icon-smalldot");
+   /* content: '';
+    background-image: url("../images/svg/smalldot.svg#icon-Group4");
     display: block;
-    width: 50px;
-    height: 50px;
+    width: 6px;
+    height: 6px;
     background-size: contain;
     left: 0;
     right: 0;
     margin: auto;
     position: absolute;
     */
+        
     content: ('. . .');
     font-family: getFont(font-regular);
-    font-weight:  getFont('font-bold');
+    font-weight:  getFontWeight('font-bold');
     font-size: 20px;
     display: block;
     position: absolute;
     left: 0;
     right: 0;
     top: 35px;
+}
+
+@media screen and (min-width: 768px) {
+    .products__label{
+        font-size: 26px;
+        line-height: 30px;
+        margin-top: 122px;
+    }
+    .products__title{
+        font-size: 48px;
+        line-height: 55px;
+        margin-bottom: 150px;
+    }
+    .products__list{
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 20px;
+    }
+    .products__item{
+        width: 220px;
+        margin-bottom: 112px;
+    }
+    .products__name{
+        width: 174px;
+        left: 23px;
+        right: 23px;
+    }
+    .products__description{
+        width: 198px;
+        line-height: 1.76;
+        top: 241px;
+        left: 11px;
+        right: 11px;
+    }
+    .products__button{
+        top: 430px;
+        right: 90px;
+        left: 90px;
+    }
+    .products__item--icecream::before{
+        content: url('../images/products/pink/pink-tablet.png');
+        top: -100px;
+        left: 5px;
+        right: 5px;
+    }
+    
+    .products__item--icecoffee::before{
+        content: url('../images/products/sand/sand-tablet.png');
+        top: -100px;
+        left: 5px;
+        right: 5px;
+    }
+    .products__item--milkshakes::before{
+        content: url('../images/products/green/green-tablet.png');
+        top: -100px;
+        left: 5px;
+        right: 5px;
+    }
 }
