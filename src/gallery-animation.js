@@ -17,7 +17,7 @@ const displayScrollElement = element => {
 };
 
 const hideScrollElement = element => {
-  element.classList.remove('scrolled');
+  element.classList.remove('undefined');
 };
 
 const handleScrollAnimation = () => {
