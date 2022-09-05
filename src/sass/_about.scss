@@ -8,10 +8,10 @@ h2 {
   margin-block-start: 0;
 }
 .about {
-  padding: 125px 0px 39px 0px;
+  padding: 125px 0px 0px 0px;
   background-color: getColor('background-light-pink');
   &__article {
-    padding: 46px 0px 17px 0px;
+    padding: 46px 0px 0px 0px;
     font-family: getFont('font-main');
     font-size: 12px;
     font-weight: getFontWeight('font-medium');
@@ -35,7 +35,7 @@ h2 {
       background-image: url('../images/about/milk-bg-mobile@2x.png');
       background-size: contain;
       background-repeat: no-repeat;
-      background-position: bottom;
+      background-position: center;
     }
   }
 }
@@ -79,10 +79,11 @@ h2 {
     color: getColor('primary-gray');
     &--last {
       padding-top: 10px;
+      padding-bottom: 17px;
     }
   }
 }
-.button {
+.button-read {
   font-size: 14px;
   font-weight: getFontWeight('font-bold');
   color: getColor('accent');
@@ -90,28 +91,34 @@ h2 {
     fill: getColor('accent');
     padding-left: 14px;
     stroke: getColor('accent');
-    stroke-width: 2px;
+    stroke-width: 1px;
   }
   &--about {
     background-color: getColor('background-white');
     border: none;
     border-radius: 22px;
     padding: 10px 37px;
-    margin-left: 35px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      background-color: #ecebeb;
+      transform: translate(10%);
+    }
   }
 }
 @media screen and (min-width: 768px) {
   .about {
-    padding: 130px 0px 66px 0px;
+    padding: 130px 0px 0px 0px;
     &__article {
+      padding-top: 50px;
       font-size: 14px;
       line-height: 1.76;
       color: getColor('dark-font');
       max-width: 340px;
-      margin-bottom: 62px;
     }
     &__cow-image {
       max-width: 340px;
+      margin: 0;
     }
     &__milk-image {
       background-image: none;
@@ -120,17 +127,16 @@ h2 {
   .content-grid {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 50px;
     gap: 17px;
   }
   .title__label {
     font-size: 26px;
-    color: getColor('secondary-pink');
     max-width: 290px;
   }
   .section__title {
     font-size: 48px;
-    color: getColor('accent');
     max-width: 435px;
     padding-top: 16px;
   }
@@ -145,16 +151,76 @@ h2 {
       letter-spacing: 0.04em;
       &--last {
         padding-top: 10px;
+        padding-bottom: 62px;
       }
     }
   }
-  .button {
+  .button-read {
     font-size: 16px;
     &__icon {
       stroke-width: 2px;
     }
-    &--about {
-      margin-left: 447px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about {
+    padding: 125px 0px 0px 0px;
+    &__article {
+      padding-top: 51px;
+      font-size: 16px;
+      max-width: 463px;
+    }
+    &__cow-image {
+      max-width: 516px;
+    }
+    &__milk-image {
+      background-image: url('../images/about/milk-bg-desktop.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-position-y: 150px;
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      &__milk-image {
+        background-image: url('../images/about/milk-bg-desktop@2x.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+  .content-grid {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 55px;
+    gap: 53px;
+  }
+  .title__label {
+    font-size: 30px;
+    max-width: 351px;
+  }
+  .section__title {
+    font-size: 58px;
+    max-width: 534px;
+  }
+  .cow-image {
+    margin: 0;
+  }
+  .article {
+    &__intro {
+      padding-bottom: 39px;
+    }
+    &__main {
+      font-size: 14px;
+      line-height: 1.94;
+
+      &--last {
+        padding-top: 10px;
+        padding-bottom: 45px;
+      }
     }
   }
 }
