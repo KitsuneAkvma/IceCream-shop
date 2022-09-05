@@ -37,7 +37,8 @@
         border-radius: 24px;
 
         padding: 43px 21px;
-        margin-bottom: 20px;
+
+
     }
 
     &__container {
@@ -49,7 +50,7 @@
     }
 
     &__spot {
-        padding-top: 3px;
+        padding-top: 1px;
         line-height: 130%;
 
         display: flex;
@@ -75,13 +76,65 @@
     }
 
     &__buttons {
-        margin-top: 54px;
+        margin-top: 34px;
         display: flex;
         align-items: center;
         flex-direction: column;
+
+        li:first-child {
+            margin-bottom: 10px;
+
+        }
+
+        button {
+            border-radius: 20px;
+            width: 162px;
+            height: 44px;
+            cursor: pointer;
+
+        }
     }
 }
 
+@media screen and (min-width: 768px) {
+    .contacts{
+        &__postion {flex-direction: row;}
+        &__cards{flex-direction: row;}
+    }
+}
+
+/* przeklejone z setup, bo inny plik nadpisuje - będzie fix */
+.button {
+    font-family: getFont('font-main');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+    padding: 0;
+}
+
+.button--accent {
+    background: getColor('accent');
+    color: getColor('background-white');
+
+    &:hover,
+    &:focus {
+        background-color: #c7133e;
+    }
+}
+
+.button--white {
+    background: getColor('background-white');
+    color: getColor('accent');
+
+    &:hover,
+    &:focus {
+        background-color: #ecebeb;
+    }
+}
+
+/* ====== */
 .spot {
     &__location {
         padding-top: 25px;
@@ -131,42 +184,6 @@
             height: 1px;
             background: #E1E1E1;
             margin-top: 10px;
-        }
-    }
-}
-
-.button {
-    border-radius: 20px;
-
-    &--contacts-red {
-        color: getColor('background-white');
-        background: getColor('accent');
-        width: 162px;
-        height: 44px;
-        cursor: pointer;
-
-        &:hover {
-            color: getColor('accent');
-            background: #ECEBEB;
-            ;
-
-            /*transition: ; */
-        }
-    }
-
-    &--contacts-white {
-        margin-top: 10px;
-        color: getColor('accent');
-        background: getColor('background-white');
-
-        width: 162px;
-        height: 44px;
-        cursor: pointer;
-
-        &:hover {
-            color: getColor('background-white');
-            background: getColor('accent');
-            /*transition: ; */
         }
     }
 }
