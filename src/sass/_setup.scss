@@ -40,13 +40,19 @@ h1 {
 .button--accent {
   background: getColor('accent');
   color: getColor('background-white');
+
+  &:hover,
+  &:focus {
+    background-color: #c7133e;
+  }
 }
 
 .button--white {
   background: getColor('background-white');
-  color: getColor('accent'); 
-}
+  color: getColor('accent');
 
-.button--white:hover {
-  background-color: #ecebeb;
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
 }
