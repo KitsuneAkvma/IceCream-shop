@@ -92,11 +92,11 @@ h1 {
 
 .section--header {
   background-color: #ffb8ca;
+  overflow: hidden;
 }
 
 .hero-header {
   padding-top: 6px;
-  height: 100vh;
   position: relative;
 }
 
@@ -110,27 +110,40 @@ h1 {
 
 .hero-header__img {
   position: absolute;
-  bottom: 0;
+  z-index: 0;
+}
+.hero-header__img--icecream {
   right: 12px;
-  z-index: 1;
+  bottom: 0;
+}
+.hero-header__img--icecream::after {
+  content: "";
+  width: 346px;
+  height: 344px;
+  position: absolute;
+  bottom: 71px;
+  right: -94px;
+  border-radius: 50%;
+  border: 1px solid #000000;
+  background: #ffa5ba;
+  z-index: -1;
+}
+.hero-header__img--milk {
+  display: none;
+}
+.hero-header__img--woman {
+  display: none;
 }
 
-@media screen and (min-width: 768px) {
-  .hero-header {
-    padding-top: 37px;
-  }
-}
 .hero-header__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 137px;
 }
 
 .hero-header__bottom {
   position: absolute;
   z-index: 2;
-  bottom: 160px;
 }
 
 .hero-header__title-div {
@@ -179,10 +192,146 @@ h1 {
   border-radius: 20px;
 }
 
+.numbers {
+  display: none;
+}
+
+.numbers__item {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  padding-top: 2px;
+}
+.numbers__item::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  bottom: 83px;
+  left: 34px;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+.numbers__number {
+  font-family: "Titan One";
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+}
+
+.numbers__text {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  color: #ffffff;
+}
+
+.hero-header__text {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .hero-header {
+    height: 100vh;
+  }
+  .hero-header__bottom {
+    bottom: 160px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-header {
+    height: 399px;
+    padding-top: 37px;
+  }
+  .hero-header__img {
+    right: 247px;
+  }
+  .hero-header__img--icecream::after {
+    width: 324px;
+    height: 322px;
+    bottom: 46px;
+    right: -110px;
+    border: none;
+  }
+  .hero-header__img--milk {
+    display: block;
+    left: 0;
+    bottom: 28px;
+  }
+  .hero-header__img--woman {
+    display: block;
+    bottom: 0;
+    right: 0;
+  }
+  .hero-header__bottom {
+    bottom: 173px;
+  }
+  .hero-header__title-div {
+    width: 162px;
+    margin-bottom: 20px;
+  }
+  .hero-header__h1 {
+    font-size: 34px;
+    line-height: 0.9;
+  }
+  .hero-header__h2 {
+    font-size: 22px;
+  }
+  .numbers {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 96px;
+    bottom: 205px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 14px;
+  }
+  .hero-header__text {
+    display: block;
+    margin-top: 205px;
+    margin-bottom: 59px;
+    margin-left: 120px;
+    width: 114px;
+    font-family: "DM Sans";
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.5;
+    color: #ffffff;
+    z-index: 2;
+  }
+}
 @media screen and (min-width: 1280px) {
+  .hero-header {
+    height: 665px;
+  }
+  .hero-header__img {
+    right: 450px;
+  }
+  .hero-header__bottom {
+    bottom: 292px;
+    left: 69px;
+  }
+  .hero-header__title-div {
+    width: 277px;
+    margin-bottom: 25px;
+  }
+  .hero-header__h1 {
+    font-size: 58px;
+  }
+  .hero-header__h2 {
+    font-size: 38px;
+  }
   .button__header {
     font-size: 14px;
     line-height: 1.29;
+    height: 40px;
   }
   .button__header--accent {
     margin-right: 15px;
@@ -191,6 +340,17 @@ h1 {
   .button__header--white {
     width: 138px;
   }
+  .numbers {
+    gap: 18px;
+  }
+  .numbers__number {
+    font-size: 46px;
+    line-height: 1.15;
+  }
+  .numbers__text {
+    font-size: 14px;
+    line-height: 1.29;
+  }
 }
 .menu {
   background: #e17992;
@@ -198,7 +358,7 @@ h1 {
   height: 100vh;
   position: fixed;
   right: 0;
-  bottom: 0;
+  top: 0;
   z-index: 3;
 }
 
@@ -242,12 +402,21 @@ h1 {
   justify-content: center;
 }
 
+.button__tablet {
+  display: none;
+}
+
 .button__text {
-  width: 90.7px;
   height: 44px;
   display: flex;
   align-items: center;
   text-align: center;
+}
+.button__text--menu {
+  width: 90.7px;
+}
+.button__text--main {
+  width: 69.43px;
 }
 
 .button__svg {
