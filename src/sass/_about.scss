@@ -118,6 +118,7 @@ h2 {
     }
     &__cow-image {
       max-width: 340px;
+      margin: 0;
     }
     &__milk-image {
       background-image: none;
@@ -170,7 +171,7 @@ h2 {
       max-width: 463px;
     }
     &__cow-image {
-      max-width: 520px;
+      max-width: 516px;
     }
     &__milk-image {
       background-image: url('../images/about/milk-bg-desktop.png');
