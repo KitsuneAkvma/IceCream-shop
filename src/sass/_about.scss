@@ -170,13 +170,14 @@ h2 {
       max-width: 463px;
     }
     &__cow-image {
-      max-width: 516px;
+      max-width: 520px;
     }
     &__milk-image {
       background-image: url('../images/about/milk-bg-desktop.png');
       background-size: contain;
       background-repeat: no-repeat;
       background-position: bottom;
+      background-position-y: 150px;
     }
     @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
