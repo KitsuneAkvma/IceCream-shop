@@ -10,6 +10,10 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 38px;
+    overflow: hidden;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
   }
   &__item1::before {
     content: url(../images/advantages/icon1.png);
@@ -36,9 +40,17 @@
     font-weight: getFontWeight('font-bold');
     line-height: 1.7;
     margin-top: 16px;
-    max-width: 230px;
+    
   }
 }
+.box {
+  transform: translateX(400%);
+  transition: transform 0.6s ease;
+}
+.box:nth-child(2) {
+  transform: translateX(-400%);
+}
+
 @media screen and (min-width: 768px) {
   .advantages {
     padding-top: 66px;
@@ -60,6 +72,13 @@
       font-size: 14px;
     }
   }
+  .box:nth-child(2) {
+    transform: translateX(400%);
+    transition-delay: 0.5s;
+  }
+  .box:nth-child(3) {
+    transition-delay: 1s;
+  }
 }
 @media screen and (min-width: 1280px) {
   .advantages {
@@ -79,4 +98,7 @@
       max-width: 330px;
     }
   }
+}
+.box.show {
+  transform: translateX(0);
 }
