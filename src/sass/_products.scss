@@ -25,8 +25,7 @@
     align-items: center;
     flex-direction: column;
     display: flex;
-    position: relative;
-    
+    position: relative; 
 }
 .products__list{
     display: block;
@@ -58,8 +57,10 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: getColor('background-white');
-    position: relative;
-    margin-top: 161px;
+    position: absolute;
+    top: 161px;
+    left: 53px;
+    right: 53px;
 }
 .products__description{
     font-family: getFont('font-main');
@@ -70,10 +71,11 @@
     line-height: 1.52;
     text-align: center;
     letter-spacing: 0.04em;
-    color: getColor('background-white');
-    margin: auto;
-    margin-top: 66px;
-    position: relative;
+    color: getColor('background-white');       
+    position: absolute;
+    top: 250px;
+    left: 39px;
+    right: 41px;
 }
 .products__button{
     background-color: getColor("background-white");
@@ -83,15 +85,18 @@
     border-radius: 50%;
     display:flex;
     justify-content: center;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 41px;
     cursor: pointer;
+    position: absolute;
+    top: 404px;
+    left: 120px;
+    right: 120px;
 }
-
 .products__icon{
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
+    fill: getColor("accent");
+    position: absolute;
+    top: 12px;
 }
 .products__item--icecream::before{
     content: url('../images/products/pink/pink-mobile.png');
@@ -99,14 +104,15 @@
     position: absolute;
     top: -112px;
     left: 15px;
+    right: 15px;
 }
-
 .products__item--icecoffee::before{
     content: url('../images/products/sand/sand-mobile.png');
     display: block;
     position: absolute;
     top: -112px;
     left: 15px;
+    right: 15px;
 }
 .products__item--milkshakes::before{
     content: url('../images/products/green/green-mobile.png');
@@ -114,18 +120,21 @@
     position: absolute;
     top: -112px;
     left: 15px;
+    right: 15px;
 }
 .products__name::after{
-  /*  content: url("../images/svg/icons.svg#icon-icon-smalldot");
+   /* content: '';
+    background-image: url("../images/svg/smalldot.svg#icon-Group4");
     display: block;
-    width: 50px;
-    height: 50px;
+    width: 6px;
+    height: 6px;
     background-size: contain;
     left: 0;
     right: 0;
     margin: auto;
     position: absolute;
     */
+        
     content: ('. . .');
     font-family: getFont(font-regular);
     font-weight:  getFontWeight('font-bold');
@@ -139,26 +148,13 @@
 
 @media screen and (min-width: 768px) {
     .products__label{
-        font-family: getFont('font-header');
-        font-weight: getFontWeight('font-regular');
         font-size: 26px;
         line-height: 30px;
-        text-align: center;
-        text-transform: uppercase;
-        color: getColor("secondary-pink");
         margin-top: 122px;
     }
     .products__title{
-        font-family: getFont('font-header');
-        font-style: normal;
-        font-weight: getFontWeight('font-regular');
         font-size: 48px;
         line-height: 55px;
-        text-align: center;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-        color: getColor("accent");
-        margin-top: 15px;
         margin-bottom: 150px;
     }
     .products__list{
@@ -167,111 +163,43 @@
         gap: 20px;
     }
     .products__item{
-        position: relative;
         width: 220px;
-        border-radius: 24px;
         margin-bottom: 112px;
     }
-    .products__item--icecream{    
-        background-color:getColor('primary-pink'); 
-    }
-    .products__item--icecoffee{
-        background-color:getColor('primary-sand');
-    }
-    .products__item--milkshakes{
-        background-color:getColor('primary-green');
-    }
     .products__name{
-        font-family: getFont('font-header');
-        font-style: normal;
-        font-weight: getFontWeight('font-regular');
-        font-size: 20px;
-        line-height: 1.15;
-        text-align: center;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-        color: getColor('background-white');
-        position: relative;
-        margin-top: 152px;
+        width: 174px;
+        left: 23px;
+        right: 23px;
     }
     .products__description{
-        font-family: getFont('font-main');
         width: 198px;
-        font-style: normal;
-        font-weight: getFontWeight('font-bold');
-        font-size: 14px;
         line-height: 1.76;
-        text-align: center;
-        letter-spacing: 0.04em;
-        color: getColor('background-white');
-        margin: auto;
-        margin-top: 66px;
-        position: relative;
+        top: 241px;
+        left: 11px;
+        right: 11px;
     }
     .products__button{
-        background-color: getColor("background-white");
-        border: none;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        display:flex;
-        justify-content: center;
-        margin: auto;
-        margin-top: 40px;
-        margin-bottom: 40px;
-        cursor: pointer;
-    }
-    .products__icon{
-        width: 10px;
-        height: 10px;
-        position: absolute;
-        left: 107px;
-        top: 468px;
-        fill: getColor("accent");
+        top: 430px;
+        right: 90px;
+        left: 90px;
     }
     .products__item--icecream::before{
         content: url('../images/products/pink/pink-tablet.png');
-        display: block;
-        position: absolute;
         top: -100px;
-        left: 10px;
+        left: 5px;
+        right: 5px;
     }
     
     .products__item--icecoffee::before{
         content: url('../images/products/sand/sand-tablet.png');
-        display: block;
-        position: absolute;
         top: -100px;
-        left: 10px;
+        left: 5px;
+        right: 5px;
     }
     .products__item--milkshakes::before{
         content: url('../images/products/green/green-tablet.png');
-        display: block;
-        position: absolute;
         top: -100px;
-        left: 10px;
-    }
-    .products__name::after{
-        /*content: "";
-        background-image: url('../images/svg/sprite.svg#icon-telegram');
-        
-        display: inline-block;
-        width: 50px;
-        height: 50px;
-        background-size: contain;
-        left: 0;
-        right: 0;
-        margin: auto;
-        position: absolute;*/
-        
-        content: ('. . .');
-        font-family: getFont(font-regular);
-        font-weight:  getFontWeight('font-bold');
-        font-size: 20px;
-        display: block;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 45px;
+        left: 5px;
+        right: 5px;
     }
 }
