@@ -21,14 +21,21 @@
     margin-top: 15px;
     margin-bottom: 144px;
 }
-.products__list{
+.products__position{
+    align-items: center;
+    flex-direction: column;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    position: relative;
+    
+}
+.products__list{
+    display: block;
+    align-items: center;
 }
 .products__item{
     position: relative;
     width: 280px;
+    height: 485px;
     border-radius: 24px;
     margin-bottom: 130px;
 }
