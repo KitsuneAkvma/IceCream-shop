@@ -3,12 +3,19 @@
 
     &__svg {
         padding-left: 5px;
-        width: 10px;
-        height: 10px;
-        /* ============= SVG TO FIX ==============
-        &--white{
-            fill: white;
-        }*/
+        width: 20px;
+        height: 20px;
+        stroke-width: 2px;
+
+        &--white {
+            stroke: getColor('background-white');
+            fill: getColor('background-white');
+        }
+
+        &--accent {
+            stroke: getColor('accent');
+            fill: getColor('accent');
+        }
     }
 
     &__position {
@@ -44,7 +51,7 @@
     &__container {
         line-height: 170%;
         display: flex;
-        max-height: 340px;
+
         flex-direction: column;
 
     }
@@ -96,12 +103,7 @@
     }
 }
 
-@media screen and (min-width: 768px) {
-    .contacts{
-        &__postion {flex-direction: row;}
-        &__cards{flex-direction: row;}
-    }
-}
+
 
 /* przeklejone z setup, bo inny plik nadpisuje - będzie fix */
 .button {
@@ -134,7 +136,6 @@
     }
 }
 
-/* ====== */
 .spot {
     &__location {
         padding-top: 25px;
@@ -184,6 +185,96 @@
             height: 1px;
             background: #E1E1E1;
             margin-top: 10px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .contacts {
+        &__cards {
+            display: flex;
+            gap: 10%;
+        }
+
+        &__position {
+            bottom: 78px;
+        }
+
+        &__card {
+            font-size: 14px;
+            padding: 50px 31px;
+            height: 544px;
+        }
+
+        &__buttons {
+            margin-top: 59px;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px;
+
+            li:first-child {
+                margin-bottom: 0px;
+            }
+
+        }
+
+        .button-width {
+            &--accent {
+                width: 191px;
+            }
+
+            &--white {
+                width: 174px;
+            }
+        }
+
+        &__spot {
+            padding-top: 14px;
+            padding-bottom: 14px;
+            font-size: 16px;
+
+            &--sand {
+                max-width: 73px;
+            }
+
+            &--green {
+                max-width: 138px;
+            }
+        }
+    }
+
+    .spot {
+        &__location {
+            padding-top: 30px;
+            padding-bottom: 15px;
+            width: 105px;
+        }
+
+        &__description {
+            padding-bottom: 50px;
+
+            &::after {
+                width: 157px;
+                margin-top: 25px;
+            }
+        }
+
+        &__contacts {
+            padding-top: 55px;
+        }
+
+        &__availability {
+            >li {
+                padding-top: 10px;
+                padding-bottom: 5px;
+            }
+
+            &::after {
+                width: 157px;
+                margin-top: 25px;
+            }
         }
     }
 }
