@@ -1,7 +1,4 @@
-const btns = document.querySelectorAll('.reviews__slide__nav__indicator__item');
-const btn1 = btns[0];
-const btn2 = btns[1];
-const btn3 = btns[2];
+const btns = document.querySelectorAll('.reviews__slide__nav__indicator');
 
 const imageContainer = document.querySelector('.reviews__slide__item__image');
 const commentContainer = document.querySelector('.reviews__slide__item__content__comment');
