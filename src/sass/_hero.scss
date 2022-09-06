@@ -365,10 +365,6 @@
   justify-content: center;
 }
 
-.button__tablet {
-  display: none;
-}
-
 .button__text {
   height: 44px;
   display: flex;
@@ -386,6 +382,10 @@
 
 .button__svg {
   fill: currentColor;
+}
+
+.button__tablet {
+  display: none;
 }
 
 .menu__item {
