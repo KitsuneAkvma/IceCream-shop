@@ -6,6 +6,7 @@ const icons = [
   document.querySelector('.icon--elipse'),
   document.querySelector('.icon--elipse2'),
 ];
+const person = document.querySelector('.reviews__slide__nav__person');
 
 //elementy slideru
 const track = document.querySelector('.reviews__slide__track');
@@ -30,6 +31,7 @@ function showComment1() {
   icons[0].style.fill = '#d41443';
   icons[1].style.fill = '#d9d9d9';
   icons[2].style.fill = '#d9d9d9';
+  person.innerHTML = 'Emily,' + '\xa0\xa0\xa0' + 'Los Angeles';
 }
 function showComment2() {
   //chowanie pozostałych elementów
@@ -40,6 +42,7 @@ function showComment2() {
   icons[0].style.fill = '#d9d9d9';
   icons[1].style.fill = '#d41443';
   icons[2].style.fill = '#d9d9d9';
+  person.innerHTML = 'Ann,' + '\xa0\xa0\xa0' + 'New York';
 }
 function showComment3() {
   //chowanie pozostałych elementów
@@ -50,4 +53,5 @@ function showComment3() {
   icons[0].style.fill = '#d9d9d9';
   icons[1].style.fill = '#d9d9d9';
   icons[2].style.fill = '#d41443';
+  person.innerHTML = 'Marry,' + '\xa0\xa0\xa0' + 'Chicago';
 }
