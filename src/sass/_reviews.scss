@@ -15,7 +15,15 @@
     flex-wrap: wrap;
     gap: 1.1rem;
   }
+  &__slide__track {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 453px;
+    width: 100%;
+  }
   &__slide__item {
+    position: absolute;
     @include flex-column;
     gap: 1.8rem;
     width: 17rem;
@@ -68,6 +76,7 @@
   &__slide__nav {
     @include flex-column;
     gap: 1.09rem;
+
     transition: all 0.5s ease-out;
 
     &__person {
@@ -87,8 +96,7 @@
 
       list-style: none;
       transition: all 0.5s ease-out;
-
-      &__item{
+      &__item {
         cursor: pointer;
         transition: transform 0.3s ease-in-out;
         &:hover {
@@ -98,6 +106,7 @@
     }
   }
 }
+
 .icon {
   &--3elipse {
     width: 2rem;
@@ -109,16 +118,27 @@
     width: 1rem;
     height: 1rem;
     fill: getColor(accent);
+    transition: fill 0.5s ease-in-out;
   }
 
   &--elipse {
     width: 0.8rem;
     height: 0.8rem;
     fill: #d9d9d9;
+    transition: fill 0.5s ease-in-out;
+    &2 {
+      width: 0.8rem;
+      height: 0.8rem;
+      fill: #d9d9d9;
+      transition: fill 0.5s ease-in-out;
+    }
   }
 }
 @media screen and (min-width: 767px) {
   .reviews {
+    &__slide__track {
+      height: 273px;
+    }
     &__slide__item {
       width: 38.576rem;
 

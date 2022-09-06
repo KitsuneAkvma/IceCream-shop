@@ -79,6 +79,7 @@ h1 {
   color: #ffffff;
 }
 .button--accent:hover, .button--accent:focus {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #c7133e;
 }
 
@@ -87,6 +88,7 @@ h1 {
   color: #d41443;
 }
 .button--white:hover, .button--white:focus {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #ecebeb;
 }
 
@@ -744,6 +746,7 @@ h1 {
   color: #ffffff;
 }
 .button--accent:hover, .button--accent:focus {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #c7133e;
 }
 
@@ -752,6 +755,7 @@ h1 {
   color: #d41443;
 }
 .button--white:hover, .button--white:focus {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #ecebeb;
 }
 
@@ -1168,7 +1172,15 @@ h2 {
   flex-wrap: wrap;
   gap: 1.1rem;
 }
+.reviews__slide__track {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 453px;
+  width: 100%;
+}
 .reviews__slide__item {
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1239,6 +1251,14 @@ h2 {
   padding: 0;
   list-style: none;
   transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.reviews__slide__nav__indicator__item {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+.reviews__slide__nav__indicator__item:hover {
+  transform: scale(1.2);
 }
 .reviews__slide__nav__indicator__item {
   cursor: pointer;
@@ -1266,6 +1286,9 @@ h2 {
 }
 
 @media screen and (min-width: 767px) {
+  .reviews__slide__track {
+    height: 273px;
+  }
   .reviews__slide__item {
     width: 38.576rem;
   }
@@ -1313,9 +1336,9 @@ h2 {
   background-color: #fff5f6;
 }
 .contacts__svg {
-  padding-left: 5px;
-  width: 20px;
-  height: 20px;
+  margin-left: 7px;
+  width: 18px;
+  height: 18px;
   stroke-width: 2px;
 }
 .contacts__svg--white {
@@ -1388,68 +1411,7 @@ h2 {
   width: 162px;
   height: 44px;
   cursor: pointer;
-}
-
-/* przeklejone z setup, bo inny plik nadpisuje - będzie fix */
-.button {
-  font-family: "DM Sans";
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border: none;
-  padding: 0;
-}
-
-.button--accent {
-  background: #d41443;
-  color: #ffffff;
-}
-.button--accent:hover, .button--accent:focus {
-  background-color: #c7133e;
-}
-
-.button--white {
-  background: #ffffff;
-  color: #d41443;
-}
-.button--white:hover, .button--white:focus {
-  background-color: #ecebeb;
-}
-
-@media screen and (min-width: 768px) {
-  .contacts__postion {
-    flex-direction: row;
-  }
-  .contacts__cards {
-    flex-direction: row;
-  }
-}
-/* przeklejone z setup, bo inny plik nadpisuje - będzie fix */
-.button {
-  font-family: "DM Sans";
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border: none;
-  padding: 0;
-}
-
-.button--accent {
-  background: #d41443;
-  color: #ffffff;
-}
-.button--accent:hover, .button--accent:focus {
-  background-color: #c7133e;
-}
-
-.button--white {
-  background: #ffffff;
-  color: #d41443;
-}
-.button--white:hover, .button--white:focus {
-  background-color: #ecebeb;
+  font-weight: 700;
 }
 
 .spot__location {
@@ -1526,8 +1488,8 @@ h2 {
     width: 174px;
   }
   .contacts__spot {
-    padding-top: 14px;
-    padding-bottom: 14px;
+    padding-top: 15px;
+    padding-bottom: 13px;
     font-size: 16px;
   }
   .contacts__spot--sand {
@@ -1558,6 +1520,53 @@ h2 {
   .spot__availability::after {
     width: 157px;
     margin-top: 25px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contacts__cards {
+    display: flex;
+    gap: 30px;
+  }
+  .contacts__position {
+    bottom: 102px;
+  }
+  .contacts__card {
+    font-size: 16px;
+    padding: 51px 44px 62px;
+    height: 574px;
+    max-width: 320px;
+  }
+  .contacts__buttons {
+    margin-top: 64px;
+    margin-bottom: 95px;
+  }
+  .contacts .button-width--accent {
+    width: 198px;
+  }
+  .contacts .button-width--white {
+    width: 180px;
+  }
+  .spot__location {
+    padding-top: 32px;
+    padding-bottom: 11px;
+  }
+  .spot__description {
+    padding-bottom: 54px;
+  }
+  .spot__description::after {
+    width: 234px;
+    margin-top: 27px;
+  }
+  .spot__contacts {
+    padding-top: 59px;
+  }
+  .spot__availability > li {
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+  .spot__availability::after {
+    width: 234px;
+    margin-top: 27px;
   }
 }
 .footer {
@@ -1688,7 +1697,7 @@ h2 {
 }
 @media screen and (min-width: 1280px) {
   .footer-grid {
-    margin-bottom: 106 px;
+    margin-bottom: 106px;
   }
   .footer-grid__title {
     margin-bottom: 15px;
