@@ -10,21 +10,25 @@
   align-items: center;
   margin: 0 auto;
 }
-ul {
-  list-style: none;
-}
+
 @media screen and (min-width: 768px) {
   .container {
     padding: 0 34px;
   }
 }
+
 @media screen and (min-width: 1280px) {
   .container {
     padding: 0 46px;
   }
 }
+
 h1 {
   margin: 0;
+}
+
+ul {
+  list-style: none;
 }
 
 .button {
