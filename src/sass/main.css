@@ -1425,6 +1425,33 @@ h2 {
     flex-direction: row;
   }
 }
+/* przeklejone z setup, bo inny plik nadpisuje - będzie fix */
+.button {
+  font-family: "DM Sans";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: none;
+  padding: 0;
+}
+
+.button--accent {
+  background: #d41443;
+  color: #ffffff;
+}
+.button--accent:hover, .button--accent:focus {
+  background-color: #c7133e;
+}
+
+.button--white {
+  background: #ffffff;
+  color: #d41443;
+}
+.button--white:hover, .button--white:focus {
+  background-color: #ecebeb;
+}
+
 .spot__location {
   padding-top: 25px;
   padding-bottom: 10px;

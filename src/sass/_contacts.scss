@@ -2,9 +2,9 @@
     background-color: getColor('background-light-pink');
 
     &__svg {
-        padding-left: 5px;
-        width: 20px;
-        height: 20px;
+        margin-left: 7px;
+        width: 18px;
+        height: 18px;
         stroke-width: 2px;
 
         &--white {
@@ -98,51 +98,10 @@
             width: 162px;
             height: 44px;
             cursor: pointer;
-
+            font-weight: getFontWeight('font-bold')
         }
     }
 }
-
-
-
-/* przeklejone z setup, bo inny plik nadpisuje - będzie fix */
-.button {
-    font-family: getFont('font-main');
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border: none;
-    padding: 0;
-}
-
-.button--accent {
-    background: getColor('accent');
-    color: getColor('background-white');
-
-    &:hover,
-    &:focus {
-        background-color: #c7133e;
-    }
-}
-
-.button--white {
-    background: getColor('background-white');
-    color: getColor('accent');
-
-    &:hover,
-    &:focus {
-        background-color: #ecebeb;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .contacts{
-        &__postion {flex-direction: row;}
-        &__cards{flex-direction: row;}
-    }
-}
-
 
 .spot {
     &__location {
@@ -240,8 +199,8 @@
         }
 
         &__spot {
-            padding-top: 14px;
-            padding-bottom: 14px;
+            padding-top: 15px;
+            padding-bottom: 13px;
             font-size: 16px;
 
             &--sand {
@@ -283,6 +242,74 @@
             &::after {
                 width: 157px;
                 margin-top: 25px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .contacts {
+        &__cards {
+            display: flex;
+            gap: 30px;
+
+        }
+
+        &__position {
+            bottom: 102px;
+        }
+
+        &__card {
+            font-size: 16px;
+            padding: 51px 44px 62px;
+            height: 574px;
+            max-width: 320px;
+        }
+
+        &__buttons {
+            margin-top: 64px;
+            margin-bottom: 95px;
+        }
+
+        .button-width {
+            &--accent {
+                width: 198px;
+            }
+
+            &--white {
+                width: 180px;
+            }
+        }
+    }
+
+    .spot {
+        &__location {
+            padding-top: 32px;
+            padding-bottom: 11px;
+        }
+
+        &__description {
+            padding-bottom: 54px;
+
+            &::after {
+                width: 234px;
+                margin-top: 27px;
+            }
+        }
+
+        &__contacts {
+            padding-top: 59px;
+        }
+
+        &__availability {
+            >li {
+                padding-top: 10px;
+                padding-bottom: 5px;
+            }
+
+            &::after {
+                width: 234px;
+                margin-top: 27px;
             }
         }
     }
