@@ -11,15 +11,25 @@
               srcset="./images/header/logo/logo@2x.png 2x"
             />
           </a>
-          <div class="hero-header__menu">
-            <a class="hero-header__link js-open-menu" href="#">
-              <svg class="hero-header__svg" width="20" height="12">
-                <use href="./images/svg/icons.svg#icon-burger"></use>
-              </svg>
-            </a>
+          <div class="hero-header__right">
+            <div class="hero-header__menu">
+              <a class="hero-header__link--burger js-open-menu" href="#">
+                <svg class="hero-header__svg" width="20" height="12">
+                  <use href="./images/svg/icons.svg#icon-burger"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="button__tablet">
+              <button class="button button--white button__menu" type="button">
+                <div class="button__text button__text--main">Buy now</div>
+                <svg class="button__svg" width="5.26" height="8">
+                  <use href="./images/svg/icons.svg#icon-chevron"></use>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
-        <picture class="hero-header__img">
+        <picture class="hero-header__img hero-header__img--icecream">
           <source
             srcset="
               ./images/header/icecream/icecream-mobile.png    1x,
@@ -67,6 +77,61 @@
             </a>
           </div>
         </div>
+        <ul class="numbers">
+          <li class="numbers__item">
+            <span class="numbers__number">16</span>
+            <span class="numbers__text">cafes</span>
+          </li>
+          <li class="numbers__item">
+            <span class="numbers__number">23</span>
+            <span class="numbers__text">food trucks</span>
+          </li>
+        </ul>
+        <picture class="hero-header__img hero-header__img--milk">
+          <source
+            srcset="
+              ./images/header/milk/milk-tablet.png    1x,
+              ./images/header/milk/milk-tablet@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/header/milk/milk-desktop.png    1x,
+              ./images/header/milk/milk-desktop@2x.png 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <img src="./images/header/milk/milk-tablet.png" alt="Milk" />
+        </picture>
+        <div class="hero-header__text-div">
+          <p class="hero-header__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et
+          </p>
+          <button class="hero-header__arrow-button">
+            <svg class="hero-header__icon">
+              <use href="images/svg/icons.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </div>
+        <picture class="hero-header__img hero-header__img--woman">
+          <source
+            srcset="
+              ./images/header/woman/woman-tablet.png    1x,
+              ./images/header/woman/woman-tablet@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/header/woman/woman-desktop.png    1x,
+              ./images/header/woman/woman-desktop@2x.png 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <img src="./images/header/woman/woman-tablet.png" alt="Woman" />
+        </picture>
       </div>
     </div>
 
@@ -80,7 +145,7 @@
       </div>
       <div class="menu__button-div">
         <button class="button button--white button__menu" type="button">
-          <div class="button__text">Buy now</div>
+          <div class="button__text button__text--menu">Buy now</div>
           <svg class="button__svg" width="5.26" height="8">
             <use href="./images/svg/icons.svg#icon-arrow"></use>
           </svg>
@@ -110,3 +175,4 @@
     </div>
   </div>
 </header>
+<script defer src="mobile-menu.js"></script>
