@@ -10,6 +10,9 @@
   align-items: center;
   margin: 0 auto;
 }
+ul {
+  list-style: none;
+}
 @media screen and (min-width: 768px) {
   .container {
     padding: 0 34px;
@@ -18,5 +21,38 @@
 @media screen and (min-width: 1280px) {
   .container {
     padding: 0 46px;
+  }
+}
+h1 {
+  margin: 0;
+}
+
+.button {
+  font-family: getFont('font-main');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: none;
+  padding: 0;
+}
+
+.button--accent {
+  background: getColor('accent');
+  color: getColor('background-white');
+
+  &:hover,
+  &:focus {
+    background-color: #c7133e;
+  }
+}
+
+.button--white {
+  background: getColor('background-white');
+  color: getColor('accent');
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
   }
 }
