@@ -38,15 +38,61 @@
     height: 485px;
     border-radius: 24px;
     margin-bottom: 130px;
+    transition-duration: 500ms;
 }
 .products__item--icecream{    
-    background-color:getColor('primary-pink'); 
+    background-color:getColor('primary-pink');
+    &:hover {
+        -webkit-box-shadow: 1px 1px 16px -1px rgba(255, 184, 202, 1);
+            -moz-box-shadow: 1px 1px 16px -1px rgba(255, 184, 202, 1);
+            box-shadow: 1px 1px 16px -1px rgba(255, 184, 202, 1);
+                -webkit-transition: all 0.5s linear;
+                -moz-transition: all 0.5s linear;
+                -ms-transition: all 0.5s linear;
+                -o-transition: all 0.5s linear;
+                transition: all 0.5s linear;
+                -webkit-transform: scale(1.1);
+                -moz-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                -o-transform: scale(1.1);
+                transform: scale(1.1);
+            }
 }
 .products__item--icecoffee{
     background-color:getColor('primary-sand');
+    &:hover{
+        -webkit-box-shadow: 1px 1px 16px -1px rgba(240, 209, 165, 1);
+    -moz-box-shadow: 1px 1px 16px -1px rgba(240, 209, 165, 1);
+    box-shadow: 1px 1px 16px -1px rgba(240, 209, 165, 1);
+        -webkit-transition: all 0.5s linear;
+        -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+        -o-transition: all 0.5s linear;
+        transition: all 0.5s linear;
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+    }
 }
 .products__item--milkshakes{
     background-color:getColor('primary-green');
+    &:hover {
+        -webkit-box-shadow: 1px 1px 16px -1px rgba(194, 226, 151, 1);
+        -moz-box-shadow: 1px 1px 16px -1px rgba(194, 226, 151, 1);
+        box-shadow: 1px 1px 16px -1px rgba(194, 226, 151, 1);
+        -webkit-transition: all 0.5s linear;
+        -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+        -o-transition: all 0.5s linear;
+        transition: all 0.5s linear;
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+    }
 }
 .products__name{
     font-family: getFont('font-header');
@@ -91,10 +137,6 @@
     top: 404px;
     left: 120px;
     right: 120px;
-}
-.products__button:hover{
-    
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .products__icon{
     width: 15px;
