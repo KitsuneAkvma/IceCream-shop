@@ -45,7 +45,23 @@
 
         padding: 43px 21px;
 
+        transition-duration: 500ms;
 
+        &:hover {
+            -webkit-box-shadow: 1px 1px 16px -1px rgba(255, 165, 186, 1);
+            -moz-box-shadow: 1px 1px 16px -1px rgba(255, 165, 186, 1);
+            box-shadow: 1px 1px 16px -1px rgba(255, 165, 186, 1);
+            -webkit-transition: all 0.5s linear;
+            -moz-transition: all 0.5s linear;
+            -ms-transition: all 0.5s linear;
+            -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -o-transform: scale(1.1);
+            transform: scale(1.1);
+        }
     }
 
     &__container {
@@ -249,6 +265,10 @@
 
 @media screen and (min-width: 1280px) {
     .contacts {
+        background-image: url(../images/background/dots-bg-desktop.png);
+        background-repeat: no-repeat;
+        background-size:contain;
+
         &__cards {
             display: flex;
             gap: 30px;
