@@ -54,6 +54,8 @@
       border-radius: 50%;
       background: getColor('secondary-pink');
       z-index: -1;
+      animation-name: changeBgColor;
+      animation-duration: 5000ms;
     }
   }
 
@@ -63,6 +65,16 @@
 
   &--woman {
     display: none;
+  }
+}
+
+@keyframes changeBgColor {
+  0% {
+    background: getColor('primary-pink');
+  }
+
+  100% {
+    background: getColor('secondary-pink');
   }
 }
 
