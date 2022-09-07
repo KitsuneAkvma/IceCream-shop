@@ -78,6 +78,15 @@ h2 {
       padding-bottom: 17px;
     }
   }
+  &__title {
+    display: block;
+    font-family: getFont('font-header');
+    font-size: 18px;
+    color: getColor('accent');
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding-bottom: 15px;
+  }
 }
 .button-read {
   font-size: 14px;
@@ -103,6 +112,74 @@ h2 {
     }
   }
 }
+.backdrop {
+  display: flex;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 10;
+  background-color: hsla(0, 0%, 0%, 0.2);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transform: scaleY(0);
+}
+.backdrop__modal {
+  padding: 20px;
+  box-sizing: border-box;
+  width: 90vw;
+  height: 90vh;
+  margin: auto;
+  position: relative;
+}
+.modal {
+  background-color: getColor('primary-pink');
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  cursor: initial;
+  opacity: 1;
+  transform: scaleY(1);
+}
+.modal__modal-x {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  padding: 12px 8px 10px 10px;
+}
+.modal-x {
+  border-radius: 50%;
+  background-color: getColor('background-color');
+  font-family: getFont('font-main');
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: back-ground-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: getColor('accent');
+  }
+}
+.modal__article {
+  padding: 20px 0;
+}
+
 @media screen and (min-width: 768px) {
   .about {
     padding: 130px 0px 0px 0px;
@@ -154,6 +231,14 @@ h2 {
   }
   .button-read {
     font-size: 16px;
+  }
+  .backdrop__modal {
+    padding: 40px;
+    width: 70vw;
+    height: 80vh;
+  }
+  .modal__article {
+    padding: 30px 0;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -216,5 +301,13 @@ h2 {
         padding-bottom: 45px;
       }
     }
+  }
+  .backdrop__modal {
+    padding: 45px;
+    width: 65vw;
+    height: 80vh;
+  }
+  .modal__article {
+    padding: 40px 0;
   }
 }
