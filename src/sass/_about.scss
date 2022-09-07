@@ -85,7 +85,7 @@ h2 {
     color: getColor('accent');
     text-transform: uppercase;
     margin: 0 auto;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
   }
 }
 .button-read {
@@ -135,8 +135,8 @@ h2 {
 .backdrop__modal {
   padding: 20px;
   box-sizing: border-box;
-  width: 90vw;
-  height: 90vh;
+  width: 85vw;
+  height: 85vh;
   margin: auto;
   position: relative;
 }
@@ -177,7 +177,7 @@ h2 {
   }
 }
 .modal__article {
-  padding: 20px 0;
+  padding: 30px 0;
 }
 
 @media screen and (min-width: 768px) {
