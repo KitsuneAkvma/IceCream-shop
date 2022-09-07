@@ -55,7 +55,7 @@
                 -moz-transform: scale(1.1);
                 -ms-transform: scale(1.1);
                 -o-transform: scale(1.1);
-                transform: scale(1.1);
+                transform: scale(1.02);
             }
 }
 .products__item--icecoffee{
@@ -73,7 +73,7 @@
         -moz-transform: scale(1.1);
         -ms-transform: scale(1.1);
         -o-transform: scale(1.1);
-        transform: scale(1.1);
+        transform: scale(1.02);
     }
 }
 .products__item--milkshakes{
@@ -91,7 +91,7 @@
         -moz-transform: scale(1.1);
         -ms-transform: scale(1.1);
         -o-transform: scale(1.1);
-        transform: scale(1.1);
+        transform: scale(1.02);
     }
 }
 .products__name{
@@ -223,6 +223,22 @@
         right: 90px;
         left: 90px;
     }
+    .products__item--icecream{    
+        &:hover {
+                    transform: scale(1.03);
+                }
+    }
+    .products__item--icecoffee{
+        &:hover{
+            transform: scale(1.03);
+        }
+    }
+    .products__item--milkshakes{
+        
+        &:hover {
+            transform: scale(1.03);
+        }
+    }
     .products__item--icecream::before{
         content: url('../images/products/pink/pink-tablet.png');
         top: -100px;
@@ -294,6 +310,22 @@
     .products__icon{    
          top: 12px;
     }    
+    .products__item--icecream{    
+        &:hover {
+                    transform: scale(1.1);
+                }
+    }
+    .products__item--icecoffee{
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    .products__item--milkshakes{
+        
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
     .products__item--icecream::before{
         content: url('../images/products/pink/pink-desktop.png');        
         top: -200px;
