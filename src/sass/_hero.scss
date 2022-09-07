@@ -288,6 +288,12 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
+      box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    }
   }
 
   .hero-header__icon {
