@@ -91,7 +91,8 @@ h2 {
     fill: getColor('accent');
     padding-left: 14px;
     stroke: getColor('accent');
-    stroke-width: 1px;
+    stroke-width: 2px;
+    padding-top: 1.5px;
   }
   &--about {
     background-color: getColor('background-white');
@@ -157,9 +158,6 @@ h2 {
   }
   .button-read {
     font-size: 16px;
-    &__icon {
-      stroke-width: 2px;
-    }
   }
 }
 @media screen and (min-width: 1280px) {
