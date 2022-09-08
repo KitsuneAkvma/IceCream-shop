@@ -81,12 +81,33 @@ h2 {
   &__title {
     display: block;
     font-family: getFont('font-header');
-    font-size: 18px;
+    font-weight: getFontWeight('font-regular');
+    font-size: 20px;
+    letter-spacing: 0.04rem;
     color: getColor('accent');
-    text-transform: uppercase;
     margin: 0 auto;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
   }
+  &__list {
+    list-style: none;
+  }
+  &__item {
+    padding-bottom: 10px;
+    &::before {
+      content: url('../images/cliparts-ice-cream_favicon1.png');
+      width: 20px;
+      height: 20px;
+      margin-left: 20px;
+    }
+  }
+}
+.modal__article {
+  font-family: getFont('font-main');
+  font-size: 14px;
+  font-weight: getFontWeight('font-medium');
+  line-height: 1.62;
+  color: getColor('dark-font');
+  overflow-y: auto;
 }
 .button-read {
   font-size: 14px;
@@ -133,7 +154,7 @@ h2 {
   transform: scaleY(0);
 }
 .backdrop__modal {
-  padding: 20px;
+  padding: 40px;
   box-sizing: border-box;
   width: 85vw;
   height: 85vh;
@@ -141,10 +162,11 @@ h2 {
   position: relative;
 }
 .modal {
-  background-color: getColor('primary-pink');
+  background-color: getColor('background-light-pink');
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  box-shadow: inset 2px 2px 10px rgba(218, 8, 88, 0.2);
+  border-radius: 10px;
   cursor: initial;
   opacity: 1;
   transform: scaleY(1);
@@ -175,9 +197,6 @@ h2 {
   &:focus {
     color: getColor('accent');
   }
-}
-.modal__article {
-  padding: 30px 0;
 }
 
 @media screen and (min-width: 768px) {
