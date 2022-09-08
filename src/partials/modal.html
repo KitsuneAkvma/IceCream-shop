@@ -1,0 +1,105 @@
+<div data-modal class="modal-buy is-hidden">
+  <div class="modal-buy__window">
+    <button data-modal-close  class="modal-buy__close" type="button">
+      <svg class="modal-buy__icon" width="30" height="30">
+        <use href="./images/svg/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <form name="product-buy" class="modal-buy__form" autocomplete="on">
+      <div class="product-buy__box">
+      <div
+        class="product-buy__container product-buy__container--icecream"
+        role="group"
+        aria-labelledby="icecream-deatail"
+      >
+        <p class="product-buy__title" id="icecream-deatail">Complete the ice cream details</p>
+        <p class="product-buy__description">Choose a flavor:</p>
+        <div class="product-buy__container product-buy__container--flavor">
+          <input
+            id="flavor-chocolate"
+            name="flavor"
+            type="radio"
+            class="product-buy__input product-buy__input--flavor"
+            value="chocolate"
+            checked
+          />
+          <label for="flavor-chocolate" class="product-buy__label product-buy__label--flavor">
+            Chocolate
+          </label>
+
+          <input
+            id="flavor-strawberry"
+            name="flavor"
+            type="radio"
+            class="product-buy__input product-buy__input--flavor"
+            value="strawberry"
+          />
+          <label for="flavor-strawberry" class="product-buy__label product-buy__label--flavor">
+            Strawberry
+          </label>
+          <input
+            id="flavor-vanilla"
+            name="flavor"
+            type="radio"
+            class="product-buy__input product-buy__input--flavor"
+            value="vanilla"
+          />
+          <label for="flavor-vanilla" class="product-buy__label product-buy__label--flavor">
+            Vanilla
+          </label>
+        </div>
+        <p class="product-buy__description">Quantity:</p>
+        <label class="product-buy__label">
+          <input
+            type="number"
+            class="product-buy__input product-buy__input--weight"
+            name="qtn"
+            min="1"
+            max="80"
+            step="1"
+            value="1"
+          />
+        </label>
+      </div>
+      <div
+        class="product-buy__container product-buy__container--contact"
+        role="group"
+        aria-labelledby="contact-deatail"
+      >
+        <p class="product-buy__title" id="contact-deatail">
+          Complete the information about delivery:
+        </p>
+        <label class="product-buy__label product-buy__label--contact">
+          <span class="product-buy__contact-title">Address:</span>
+          <input
+            class="product-buy__input product-buy__input--contact"
+            type="text"
+            name="delivety-adress"
+            required
+          />
+        </label>
+        <label class="product-buy__label product-buy__label--contact">
+          <span class="product-buy__contact-title">Country:</span>
+          <input
+            class="product-buy__input product-buy__input--contact"
+            type="text"
+            name="delivety-county"
+            required
+          />
+        </label>
+        <label class="product-buy__label product-buy__label--contact">
+          <span class="product-buy__contact-title">Phone:</span>
+          <input
+            class="product-buy__input product-buy__input--contact"
+            type="tel"
+            name="phone-number"
+            required
+          />
+        </label>
+      </div>
+      <button type="submit" class="product-buy__send-btn">Send</button>
+    </div>
+    </form>
+  </div>
+</div>
