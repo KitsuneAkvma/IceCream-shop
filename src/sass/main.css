@@ -316,6 +316,7 @@ ul {
     position: absolute;
     right: 0;
     top: 0;
+    left: 26px;
     border-radius: 50%;
     background: #ffffff;
     z-index: -1;
@@ -479,7 +480,8 @@ ul {
     height: 30px;
     position: absolute;
     right: 0;
-    top: 0;
+    top: -2px;
+    left: 48px;
   }
   .numbers__text {
     font-size: 14px;
@@ -830,98 +832,6 @@ ul {
     right: 5px;
   }
 }
-.container {
-  min-width: 320px;
-  max-width: 1280px;
-  padding: 0 20px;
-  align-items: center;
-  margin: 0 auto;
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    padding: 0 34px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .container {
-    padding: 0 46px;
-  }
-}
-h1 {
-  margin: 0;
-}
-
-ul {
-  list-style: none;
-}
-
-.button {
-  font-family: "DM Sans";
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-}
-
-.button--accent {
-  background-color: #d41443;
-  color: #ffffff;
-  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.button--accent:hover, .button--accent:focus {
-  background-color: #c7133e;
-  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
-}
-
-.button--white {
-  background-color: #ffffff;
-  color: #d41443;
-  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.button--white:hover, .button--white:focus {
-  background-color: #ecebeb;
-  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
-}
-
-* {
-  margin: 0px;
-}
-
-body {
-  position: relative;
-  font-family: "DM Sans", "Titan One", sans-serif;
-  color: #000000;
-  background-color: #ffffff;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul,
-ol {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  margin-block-end: 0;
-  margin-block-start: 0;
-}
-
-p {
-  margin-block-end: 0;
-  margin-block-start: 0;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 h2 {
   margin: 0;
   margin-block-end: 0;

@@ -243,6 +243,7 @@
       position: absolute;
       right: 0;
       top: 0;
+      left: 26px;
       border-radius: 50%;
       background: getColor('background-white');
       z-index: -1;
@@ -442,7 +443,8 @@
       height: 30px;
       position: absolute;
       right: 0;
-      top: 0;
+      top: -2px;
+      left: 48px;
     }
   }
 
