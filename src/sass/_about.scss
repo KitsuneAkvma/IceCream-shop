@@ -92,7 +92,7 @@ h2 {
     margin: 0 auto;
     padding-bottom: 30px;
     &--subtitle {
-      padding: 0px 0 20px 0;
+      padding: 20px 0 20px 0;
     }
   }
   &__list {
@@ -211,21 +211,22 @@ h2 {
   }
 }
 .textarea__input {
-  width: auto;
+  width: 100%;
   resize: none;
   margin-top: 4px;
-  margin-bottom: 20px;
   padding: 12px 16px;
-
-  &:focus {
-    border: 1px solid getColor('checkmark-color');
-  }
+  background-color: getColor('background-white');
+  border: none;
+  outline: none;
 
   &::placeholder {
     font-size: 12px;
     color: rgba(117, 117, 117, 0.5);
     letter-spacing: 0.01em;
   }
+}
+.textarea__title {
+  font-size: 14px;
 }
 @media screen and (min-width: 768px) {
   .about {
