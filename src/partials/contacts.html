@@ -78,7 +78,7 @@
     <!-- =============== CONTACTS BUTTONS  =============== -->
     <ul class="contacts__buttons">
       <li>
-        <button type="button" class="button button--accent button-width--accent">
+        <button type="button" class="button button--accent button-width--accent open-modal">
           Our Locations<svg class="contacts__svg contacts__svg--white">
             <use href="images/svg/icons.svg#icon-chevron"></use>
           </svg>
@@ -95,3 +95,47 @@
     </ul>
   </div>
 </section>
+<div class="modal-locations-backdrop">
+  <div class="modal-locations">
+    <ul class="modal-locations__list">
+      <li>
+        <h2 class="modal-locations__titles">Chicago</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d95093.94493868412!2d-87.698443!3d41.8565897!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2cdbe18c5831%3A0x5d43ff6c1f096276!2sMonteverde%20Restaurant%20%26%20Pastificio!5e0!3m2!1sen!2spl!4v1662497777224!5m2!1sen!2spl"
+          class="modal-locations__map"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </li>
+      <li>
+        <h2 class="modal-locations__titles">Los Angeles</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d83412.97253712923!2d-118.38764533196898!3d33.993090750173316!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x378bbc02c70d5254!2sBud&#39;s%20Deli!5e0!3m2!1sen!2spl!4v1662592145958!5m2!1sen!2spl"
+          class="modal-locations__map"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </li>
+      <li>
+        <h2 class="modal-locations__titles">New York</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d85867.56639601063!2d-118.5353342220751!3d33.982787788471825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dafe7d059956db%3A0xfb8a3bcff7448438!2sJohnnie&#39;s%20New%20York%20Pizzeria!5e0!3m2!1sen!2spl!4v1662499000188!5m2!1sen!2spl"
+          class="modal-locations__map"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </li>
+    </ul>
+    <button type="button" class="close-button button button--accent modal-locations__button">
+      <svg class="modal-locations__icon-x">
+        <use href="./images/svg/icons.svg#icon-x"></use>
+      </svg>
+    </button>
+  </div>
+</div>

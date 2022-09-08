@@ -36,7 +36,6 @@ ul {
   border: none;
   padding: 0;
   cursor: pointer;
-
 }
 
 .button--accent {
@@ -63,4 +62,8 @@ ul {
     background-color: #ecebeb;
     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
