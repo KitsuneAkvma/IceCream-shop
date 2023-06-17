@@ -1,50 +1,45 @@
-# parcel-project-template
+# IceCream Shop Website
 
-## Zalezności
+![IceCream Shop](/src/images/header/logo/logo.png)
 
-Na komputerze musi być zainstalowana LTS-wersja [Node.js](https://nodejs.org/en/).
+## Description
 
-## Przed rozpoczęciem pracy
+The IceCream Shop website is a captivating online platform for a fictional ice cream company known as "IceCream Shop." This project showcases the company's unwavering commitment to creating delectable ice cream treats that are made with pure passion. With a visually appealing design and engaging content, the website aims to entice potential customers to visit the IceCream Shop's various locations and food trucks.
 
-Jeden raz na projekt zainstalować wszystkie zalezności.
+## Key Features
 
-```shell
-npm ci
-```
+- **Discover the Art of Ice Cream Making**: Dive into the fascinating world of ice cream production and learn about the meticulous attention to detail and essential factors that go into creating the perfect scoop of ice cream.
 
-### Praca
+- **Indulge in a Flavorful Menu**: Explore a wide array of delightful ice cream flavors and tempting treats that will tantalize your taste buds and leave you craving for more.
 
-Włączyć tryp pracy.
+- **Find Your Nearest Scoop**: Utilize the interactive map feature to easily locate the closest IceCream Shop to satisfy your ice cream cravings. Whether you're in the city or on the move, a delightful frozen treat is just around the corner.
 
-```shell
-npm run dev
-```
+- **Entertaining Bus Rides**: Make your journey to the IceCream Shop even more enjoyable by engaging in trivia or reading customer reviews while commuting on the bus. Prepare for a delightful experience even before you arrive!
 
-W przeglądarce przejść na [http://localhost:1234](http://localhost:1234).
+- **Share Your Experience**: The IceCream Shop values client experiences and welcomes feedback. Connect with them through the provided contact information and social media links to share your thoughts and memorable moments.
 
-### Deploy
+## Technologies Utilized
 
-Kod będzie automatycznie się zbierać i robić deploy aktualnej wersji projektu na GitHub Pages, w
-gałąź `gh-pages`, za kazdym razem jeśli zostaną wprowadzone zmiany w `main`. Na przykład, po
-bezpośrenim push lub po przyjęciu pull-request. Aby to działało musimy w pliku `package.json`
-zmienić pole `homepage` i skrypt `build`, zmieniając `nazwe_uzytkownika` i `nazwe_repozytorium` na
-swoje.
+The IceCream Shop website is built using the following technologies:
 
-```json
-"homepage": "https://nazwa_uzytkownika.github.io/nazwa_repozytorium",
-"scripts": {
-  "build": "parcel build src/*.html --public-url /nazwa_repozytorium/"
-},
-```
+- HTML5
+- CSS3
+- SASS
 
-Po jakimś czasie stronę mozna będzie zobaczyć na zywo pod adresem który jest wpisany w poprawione
-właściwości `homepage`, na przykład
-[https://goitacademy.github.io/parcel-project-template](https://goitacademy.github.io/parcel-project-template).
+## People engaged
 
-## Pliki i folderzy
+- [Dorota Domańska](https://github.com/DorotaDomanska) - Scrum Master
+- [Agata Kwiatkowska](https://github.com/kwiatkowsko)
+- [Malgorzata Marczynska](https://github.com/MalgorzataMarczynska)
+- [Kamil Szafranski](https://github.com/KamilSzafranski)
+- [Damian Sikorski](https://github.com/DamianSikorski)
+- [Agnieszka Baranowska](https://github.com/AgnieszkaBaranowska)
+- [Mateusz Martin](https://github.com/KitsuneAkvma) - Team Leader
 
-- Wszystkie partials plików styłów powinny być w folderze `src/sass` i importować się w
-  `src/sass/main.scss`
-- Zdjęcia dodawajcie w folder `src/images`, przed tym zoptymizujcie te zdjęcia które dodajecie.
-  Program po prostu kopiuje wykorzystane zdjęcia aby system nie musiał optymizować je, bo na słabych
-  komputerach to moze zająć duzo czasu.
+
+
+## License
+
+The IceCream Shop website is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+
+We hope you enjoy the IceCream Shop website and get inspired to indulge in a delightful ice cream experience!
