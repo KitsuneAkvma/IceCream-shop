@@ -25,6 +25,7 @@ The IceCream Shop website is built using the following technologies:
 - HTML5
 - CSS3
 - SASS
+- javaScript
 
 ## People engaged
 
