@@ -19,6 +19,6 @@
     refs.modal1.openBtn.addEventListener('click', () => toggleModal(refs.modal1));
     refs.modal1.closeBtn.addEventListener('click', () => toggleModal(refs.modal1));
     refs.modal2.openBtn.addEventListener('click', () => toggleModal(refs.modal2));
-    refs.modal2.closeBtn?.addEventListener('click', () => toggleModal(refs.modal2));
+    refs.modal2.closeBtn.addEventListener('click', () => toggleModal(refs.modal2));
   })();
   
