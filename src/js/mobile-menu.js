@@ -4,18 +4,22 @@
   const closeMenuBtn = document.querySelector('.js-close-menu');
 
   const toggleMenu = () => {
-    const isMenuOpen = openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+    const isMenuOpen = openMenuBtn.getAttribute('aria-expanded') === 'true';
     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
     mobileMenu.classList.toggle('is-open');
   };
 
+  const closeMenuOnLargeScreens = (mediaQuery) => {
+    if (mediaQuery.matches) {
+      mobileMenu.classList.remove('is-open');
+      openMenuBtn.setAttribute('aria-expanded', false);
+    }
+  };
+
+  const mediaQuery = window.matchMedia('(min-width: 768px)');
+  mediaQuery.addEventListener('change', closeMenuOnLargeScreens);
+  closeMenuOnLargeScreens(mediaQuery);
+
   openMenuBtn.addEventListener('click', toggleMenu);
   closeMenuBtn.addEventListener('click', toggleMenu);
-
-  // Close the mobile menu on wider screens if the device orientation changes
-  window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
-    if (!e.matches) return;
-    mobileMenu.classList.remove('is-open');
-    openMenuBtn.setAttribute('aria-expanded', false);
-  });
 })();
