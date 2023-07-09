@@ -5,14 +5,14 @@ h2 {
 }
 .about {
   padding: 125px 0px 0px 0px;
-  background-color: getColor('background-light-pink');
+  background-color: getColor("background-light-pink");
   &__article {
     padding: 46px 0px 0px 0px;
-    font-family: getFont('font-main');
+    font-family: getFont("font-main");
     font-size: 12px;
-    font-weight: getFontWeight('font-medium');
+    font-weight: getFontWeight("font-medium");
     line-height: 1.62;
-    color: getColor('dark-font');
+    color: getColor("dark-font");
     max-width: 220px;
     margin: 0 auto;
   }
@@ -21,14 +21,16 @@ h2 {
     margin: 0 auto;
   }
   &__milk-image {
-    background-image: url('../images/about/milk-bg-mobile.png');
+    background-image: url("/public/images/about/milk-bg-mobile.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
   }
-  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     &__milk-image {
-      background-image: url('../images/about/milk-bg-mobile@2x.png');
+      background-image: url("/public/images/about/milk-bg-mobile@2x.png");
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
@@ -37,20 +39,20 @@ h2 {
 }
 .title__label {
   display: block;
-  font-family: getFont('font-header');
+  font-family: getFont("font-header");
   font-size: 18px;
-  color: getColor('secondary-pink');
+  color: getColor("secondary-pink");
   text-transform: uppercase;
   max-width: 200px;
   margin: 0 auto;
 }
 .section__title {
   text-align: center;
-  font-family: getFont('font-header');
+  font-family: getFont("font-header");
   font-size: 34px;
-  font-weight: getFontWeight('font-regular');
+  font-weight: getFontWeight("font-regular");
   line-height: 1.14;
-  color: getColor('accent');
+  color: getColor("accent");
   margin: 0 auto;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -65,15 +67,15 @@ h2 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    color: getColor('dark-font');
+    color: getColor("dark-font");
     padding-bottom: 47px;
   }
   &__main {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap:.5rem;
-    color: getColor('primary-gray');
+    gap: 0.5rem;
+    color: getColor("primary-gray");
     &--last {
       padding-top: 10px;
       padding-bottom: 17px;
@@ -85,11 +87,11 @@ h2 {
   }
   &__title {
     display: block;
-    font-family: getFont('font-header');
-    font-weight: getFontWeight('font-regular');
+    font-family: getFont("font-header");
+    font-weight: getFontWeight("font-regular");
     font-size: 20px;
     letter-spacing: 0.04rem;
-    color: getColor('accent');
+    color: getColor("accent");
     margin: 0 auto;
     padding-bottom: 30px;
     &--subtitle {
@@ -101,13 +103,13 @@ h2 {
   }
   &__item {
     padding-bottom: 10px;
-    font-family: getFont('font-main');
+    font-family: getFont("font-main");
     font-size: 14px;
-    font-weight: getFontWeight('font-medium');
+    font-weight: getFontWeight("font-medium");
     line-height: 1.5;
-    color: getColor('primary-gray');
+    color: getColor("primary-gray");
     &::before {
-      content: url('../images/cliparts-ice-cream_ikony_listy_mala.png');
+      content: url("/public/images/cliparts-ice-cream_ikony_listy_mala.png");
       display: inline-block;
       width: 20px;
       height: 20px;
@@ -117,25 +119,25 @@ h2 {
   }
 }
 .modal__article {
-  font-family: getFont('font-main');
+  font-family: getFont("font-main");
   font-size: 14px;
-  font-weight: getFontWeight('font-medium');
+  font-weight: getFontWeight("font-medium");
   line-height: 1.62;
-  color: getColor('dark-font');
+  color: getColor("dark-font");
 }
 .button-read {
   font-size: 14px;
-  font-weight: getFontWeight('font-bold');
-  color: getColor('accent');
+  font-weight: getFontWeight("font-bold");
+  color: getColor("accent");
   &__icon {
-    fill: getColor('accent');
+    fill: getColor("accent");
     padding-left: 14px;
-    stroke: getColor('accent');
+    stroke: getColor("accent");
     stroke-width: 2px;
     padding-top: 1.5px;
   }
   &--about {
-    background-color: getColor('background-white');
+    background-color: getColor("background-white");
     border: none;
     border-radius: 22px;
     padding: 10px 37px;
@@ -176,8 +178,10 @@ h2 {
   position: relative;
 }
 .modal {
-  background-color: getColor('background-light-pink');
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  background-color: getColor("background-light-pink");
+  box-shadow:
+    0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   box-shadow: inset 2px 2px 10px rgba(218, 8, 88, 0.2);
   border-radius: 10px;
@@ -196,7 +200,7 @@ h2 {
 }
 .modal-x {
   border-radius: 50%;
-  background-color: getColor('background-light-pink');
+  background-color: getColor("background-light-pink");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -207,7 +211,7 @@ h2 {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    fill: getColor('accent');
+    fill: getColor("accent");
     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
   }
 }
@@ -216,7 +220,7 @@ h2 {
   resize: none;
   margin-top: 4px;
   padding: 12px 16px;
-  background-color: getColor('background-white');
+  background-color: getColor("background-white");
   border: none;
   outline: none;
 
@@ -236,7 +240,7 @@ h2 {
       padding-top: 50px;
       font-size: 14px;
       line-height: 1.76;
-      color: getColor('dark-font');
+      color: getColor("dark-font");
       max-width: 340px;
     }
     &__cow-image {
@@ -302,7 +306,7 @@ h2 {
       max-width: 516px;
     }
     &__milk-image {
-      background-image: url('../images/about/milk-bg-desktop.png');
+      background-image: url("/public/images/about/milk-bg-desktop.png");
       background-size: contain;
       background-repeat: no-repeat;
       background-position: bottom;
@@ -312,7 +316,7 @@ h2 {
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       &__milk-image {
-        background-image: url('../images/about/milk-bg-desktop@2x.png');
+        background-image: url("/public/images/about/milk-bg-desktop@2x.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;

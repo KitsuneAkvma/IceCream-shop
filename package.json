@@ -1,12 +1,13 @@
 {
-  "name": "IceCream-shop",
+  "name": "ice-cream-shop",
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "homepage": "https://kitsuneakvma.github.io/IceCream-shop",
   "scripts": {
-    "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /IceCream-shop"
+    "start": "parcel *.html",
+    "dev": "parcel *.html",
+    "build": "parcel build *.html --public-url /IceCream-shop"
   },
   "repository": {
     "type": "git",

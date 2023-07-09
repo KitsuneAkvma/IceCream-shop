@@ -1,9 +1,9 @@
-var modal = document.querySelector('.modal-locations-backdrop');
-var trigger = document.querySelector('.open-modal');
-var closeButton = document.querySelector('.close-button');
+var modal = document.querySelector(".modal-locations-backdrop");
+var trigger = document.querySelector(".open-modal");
+var closeButton = document.querySelector(".close-button");
 
 function toggleModal() {
-  modal.classList.toggle('show-modal');
+  modal.classList.toggle("show-modal");
 }
 
 function windowOnClick(event) {
@@ -12,6 +12,6 @@ function windowOnClick(event) {
   }
 }
 
-trigger.addEventListener('click', toggleModal);
-closeButton.addEventListener('click', toggleModal);
-window.addEventListener('click', windowOnClick);
+trigger && trigger.addEventListener("click", toggleModal);
+closeButton && closeButton.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick);

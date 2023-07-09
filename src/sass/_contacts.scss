@@ -1,5 +1,5 @@
 .contacts {
-  background-color: getColor('background-light-pink');
+  background-color: getColor("background-light-pink");
 
   &__svg {
     margin-top: 1.5px;
@@ -9,13 +9,13 @@
     stroke-width: 2px;
 
     &--white {
-      stroke: getColor('background-white');
-      fill: getColor('background-white');
+      stroke: getColor("background-white");
+      fill: getColor("background-white");
     }
 
     &--accent {
-      stroke: getColor('accent');
-      fill: getColor('accent');
+      stroke: getColor("accent");
+      fill: getColor("accent");
     }
   }
 
@@ -37,10 +37,10 @@
     /* const cards width */
     max-width: 220px;
 
-    font-weight: getFontWeight('font-medium');
+    font-weight: getFontWeight("font-medium");
     font-size: 12px;
 
-    background-color: getColor('background-white');
+    background-color: getColor("background-white");
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
 
@@ -81,17 +81,17 @@
     align-items: center;
     text-align: center;
     letter-spacing: 0.04em;
-    color: getColor('background-white');
+    color: getColor("background-white");
 
     &--sand {
-      background-color: getColor('primary-sand');
+      background-color: getColor("primary-sand");
       max-width: 80px;
       border-radius: 4px;
       height: 16px;
     }
 
     &--green {
-      background-color: getColor('primary-green');
+      background-color: getColor("primary-green");
       max-width: 130px;
       border-radius: 4px;
       height: 16px;
@@ -113,7 +113,7 @@
       width: 162px;
       height: 44px;
       cursor: pointer;
-      font-weight: getFontWeight('font-bold');
+      font-weight: getFontWeight("font-bold");
     }
   }
 }
@@ -123,7 +123,7 @@
     padding-top: 25px;
     padding-bottom: 10px;
     letter-spacing: 0.04em;
-    color: getColor('dark-font');
+    color: getColor("dark-font");
   }
 
   &__description {
@@ -132,7 +132,7 @@
 
     &::after {
       position: absolute;
-      content: '';
+      content: "";
       display: block;
       width: 180px;
       height: 1px;
@@ -142,14 +142,14 @@
   }
 
   &__time {
-    color: getColor('secondary-pink');
+    color: getColor("secondary-pink");
   }
 
   &__contacts {
     padding-top: 35px;
 
     a {
-      color: getColor('primary-gray');
+      color: getColor("primary-gray");
       display: block;
     }
   }
@@ -161,7 +161,7 @@
 
     &::after {
       position: absolute;
-      content: '';
+      content: "";
       display: block;
       width: 180px;
       height: 1px;
@@ -191,7 +191,7 @@
   transform: translate(-50%, -50%);
   width: 300px;
   height: 600px;
-  background-color: getColor('background-menu');
+  background-color: getColor("background-menu");
   border-radius: 8px;
   position: relative;
   padding-top: 10px;
@@ -204,9 +204,9 @@
     margin-right: auto;
   }
   &__titles {
-    font-family: getFont('font-header');
-    color: getColor('background-white');
-    font-weight: getFontWeight('font-regular');
+    font-family: getFont("font-header");
+    color: getColor("background-white");
+    font-weight: getFontWeight("font-regular");
     text-align: center;
     letter-spacing: 0.06em;
     margin-top: 10px;
@@ -222,14 +222,14 @@
     right: 7px;
     cursor: pointer;
     &:hover {
-      background-color: getColor('background-white');
+      background-color: getColor("background-white");
       .modal-locations__icon-x {
-        fill: getColor('background-menu');
+        fill: getColor("background-menu");
       }
     }
   }
   &__icon-x {
-    fill: getColor('background-white');
+    fill: getColor("background-white");
     width: 16px;
     height: 16px;
   }
@@ -378,13 +378,13 @@
       right: 12px;
     }
     &__icon-x {
-      fill: getColor('background-white');
+      fill: getColor("background-white");
       width: 19px;
       height: 19px;
     }
   }
   .contacts {
-    background-image: url(../images/background/dots-bg-desktop.png);
+    background-image: url("/public/images/background/dots-bg-desktop.png");
     background-repeat: no-repeat;
     background-size: contain;
 

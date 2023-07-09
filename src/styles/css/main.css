@@ -761,7 +761,7 @@ html {
 }
 
 .products__item--icecream::before {
-  content: url("../images/products/pink/pink-mobile.png");
+  content: url("/public/images/products/pink/pink-mobile.png");
   display: block;
   position: absolute;
   top: -112px;
@@ -770,7 +770,7 @@ html {
 }
 
 .products__item--icecoffee::before {
-  content: url("../images/products/sand/sand-mobile.png");
+  content: url("/public/images/products/sand/sand-mobile.png");
   display: block;
   position: absolute;
   top: -112px;
@@ -779,7 +779,7 @@ html {
 }
 
 .products__item--milkshakes::before {
-  content: url("../images/products/green/green-mobile.png");
+  content: url("/public/images/products/green/green-mobile.png");
   display: block;
   position: absolute;
   top: -112px;
@@ -836,19 +836,19 @@ html {
     transform: scale(1.03);
   }
   .products__item--icecream::before {
-    content: url("../images/products/pink/pink-tablet.png");
+    content: url("/public/images/products/pink/pink-tablet.png");
     top: -100px;
     left: 5px;
     right: 5px;
   }
   .products__item--icecoffee::before {
-    content: url("../images/products/sand/sand-tablet.png");
+    content: url("/public/images/products/sand/sand-tablet.png");
     top: -100px;
     left: 5px;
     right: 5px;
   }
   .products__item--milkshakes::before {
-    content: url("../images/products/green/green-tablet.png");
+    content: url("/public/images/products/green/green-tablet.png");
     top: -100px;
     left: 5px;
     right: 5px;
@@ -901,19 +901,19 @@ html {
     top: 12px;
   }
   .products__item--icecream::before {
-    content: url("../images/products/pink/pink-desktop.png");
+    content: url("/public/images/products/pink/pink-desktop.png");
     top: -200px;
     left: 3px;
     right: 3px;
   }
   .products__item--icecoffee::before {
-    content: url("../images/products/sand/sand-desktop.png");
+    content: url("/public/images/products/sand/sand-desktop.png");
     top: -200px;
     left: 3px;
     right: 3px;
   }
   .products__item--milkshakes::before {
-    content: url("../images/products/green/green-desktop.png");
+    content: url("/public/images/products/green/green-desktop.png");
     top: -200px;
     left: 3px;
     right: 3px;
@@ -946,14 +946,14 @@ h2 {
   margin: 0 auto;
 }
 .about__milk-image {
-  background-image: url("../images/about/milk-bg-mobile.png");
+  background-image: url("/public/images/about/milk-bg-mobile.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
 }
 @media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .about__milk-image {
-    background-image: url("../images/about/milk-bg-mobile@2x.png");
+    background-image: url("/public/images/about/milk-bg-mobile@2x.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -1035,7 +1035,7 @@ h2 {
   color: #907e82;
 }
 .article__item::before {
-  content: url("../images/cliparts-ice-cream_ikony_listy_mala.png");
+  content: url("/public/images/cliparts-ice-cream_ikony_listy_mala.png");
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -1240,7 +1240,7 @@ h2 {
     max-width: 516px;
   }
   .about__milk-image {
-    background-image: url("../images/about/milk-bg-desktop.png");
+    background-image: url("/public/images/about/milk-bg-desktop.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -1249,7 +1249,7 @@ h2 {
 }
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .about__milk-image {
-    background-image: url("../images/about/milk-bg-desktop@2x.png");
+    background-image: url("/public/images/about/milk-bg-desktop@2x.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -1324,13 +1324,13 @@ h2 {
   margin-right: auto;
 }
 .advantages__item1::before {
-  content: url(../images/advantages/icon1.png);
+  content: url("/public/images/advantages/icon1.png");
 }
 .advantages__item2::before {
-  content: url(../images/advantages/icon2.png);
+  content: url("/public/images/advantages/icon2.png");
 }
 .advantages__item3::before {
-  content: url(../images/advantages/icon3.png);
+  content: url("/public/images/advantages/icon3.png");
 }
 .advantages__numbers {
   font-family: "Titan One";
@@ -1931,7 +1931,7 @@ h2 {
     height: 19px;
   }
   .contacts {
-    background-image: url(../images/background/dots-bg-desktop.png);
+    background-image: url("/public/images/background/dots-bg-desktop.png");
     background-repeat: no-repeat;
     background-size: contain;
   }

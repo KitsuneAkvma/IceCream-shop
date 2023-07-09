@@ -172,7 +172,7 @@
 }
 
 .products__item--icecream::before {
-    content: url('../images/products/pink/pink-mobile.png');
+    content: url('/public/images/products/pink/pink-mobile.png');
     display: block;
     position: absolute;
     top: -112px;
@@ -181,7 +181,7 @@
 }
 
 .products__item--icecoffee::before {
-    content: url('../images/products/sand/sand-mobile.png');
+    content: url('/public/images/products/sand/sand-mobile.png');
     display: block;
     position: absolute;
     top: -112px;
@@ -190,7 +190,7 @@
 }
 
 .products__item--milkshakes::before {
-    content: url('../images/products/green/green-mobile.png');
+    content: url('/public/images/products/green/green-mobile.png');
     display: block;
     position: absolute;
     top: -112px;
@@ -264,21 +264,21 @@
     }
 
     .products__item--icecream::before {
-        content: url('../images/products/pink/pink-tablet.png');
+        content: url('/public/images/products/pink/pink-tablet.png');
         top: -100px;
         left: 5px;
         right: 5px;
     }
 
     .products__item--icecoffee::before {
-        content: url('../images/products/sand/sand-tablet.png');
+        content: url('/public/images/products/sand/sand-tablet.png');
         top: -100px;
         left: 5px;
         right: 5px;
     }
 
     .products__item--milkshakes::before {
-        content: url('../images/products/green/green-tablet.png');
+        content: url('/public/images/products/green/green-tablet.png');
         top: -100px;
         left: 5px;
         right: 5px;
@@ -340,21 +340,21 @@
     }
 
     .products__item--icecream::before {
-        content: url('../images/products/pink/pink-desktop.png');
+        content: url('/public/images/products/pink/pink-desktop.png');
         top: -200px;
         left: 3px;
         right: 3px;
     }
 
     .products__item--icecoffee::before {
-        content: url('../images/products/sand/sand-desktop.png');
+        content: url('/public/images/products/sand/sand-desktop.png');
         top: -200px;
         left: 3px;
         right: 3px;
     }
 
     .products__item--milkshakes::before {
-        content: url('../images/products/green/green-desktop.png');
+        content: url('/public/images/products/green/green-desktop.png');
         top: -200px;
         left: 3px;
         right: 3px;

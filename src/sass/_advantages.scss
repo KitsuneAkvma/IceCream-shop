@@ -1,5 +1,5 @@
 .advantages {
-  background: getColor('background-light-pink');
+  background: getColor("background-light-pink");
   padding-top: 39px;
   padding-bottom: 97px;
   &__hidden-title {
@@ -16,19 +16,19 @@
     margin-right: auto;
   }
   &__item1::before {
-    content: url(../images/advantages/icon1.png);
+    content: url("/public/images/advantages/icon1.png");
   }
   &__item2::before {
-    content: url(../images/advantages/icon2.png);
+    content: url("/public/images/advantages/icon2.png");
   }
   &__item3::before {
-    content: url(../images/advantages/icon3.png);
+    content: url("/public/images/advantages/icon3.png");
   }
 
   &__numbers {
-    font-family: getFont('font-header');
-    font-weight: getFontWeight('font-regular');
-    color: getColor('accent');
+    font-family: getFont("font-header");
+    font-weight: getFontWeight("font-regular");
+    color: getColor("accent");
     font-size: 36px;
     letter-spacing: 0.04em;
     line-height: 1.13;
@@ -37,10 +37,9 @@
   }
   &__content {
     font-size: 12px;
-    font-weight: getFontWeight('font-bold');
+    font-weight: getFontWeight("font-bold");
     line-height: 1.7;
     margin-top: 16px;
-    
   }
 }
 .box {
